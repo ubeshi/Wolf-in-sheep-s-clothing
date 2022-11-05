@@ -81,6 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Wolf in sheep's clothing"
+run/main_scene="res://scenes/main.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
