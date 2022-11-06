@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "PlayerItem",
+"class": "BloodyKnife",
+"language": "GDScript",
+"path": "res://items/bloody-knife/bloody-knife.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -59,12 +64,28 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
+"base": "PlayerItem",
+"class": "EmptyItem",
+"language": "GDScript",
+"path": "res://items/empty-item/empty-item.gd"
+}, {
 "base": "PanelContainer",
 "class": "HistoryRow",
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
+}, {
+"base": "Node",
+"class": "PlayerItem",
+"language": "GDScript",
+"path": "res://items/item.gd"
+}, {
+"base": "PlayerItem",
+"class": "Pudding",
+"language": "GDScript",
+"path": "res://items/pudding/pudding.gd"
 } ]
 _global_script_class_icons={
+"BloodyKnife": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
@@ -75,7 +96,10 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
-"HistoryRow": ""
+"EmptyItem": "",
+"HistoryRow": "",
+"PlayerItem": "",
+"Pudding": ""
 }
 
 [application]
