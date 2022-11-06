@@ -40,7 +40,7 @@ _global_script_class_icons={
 
 config/name="Wolf in sheep's clothing"
 run/main_scene="res://scenes/main.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/icon.png"
 
 [gui]
 
