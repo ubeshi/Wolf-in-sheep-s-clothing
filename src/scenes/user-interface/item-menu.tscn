@@ -2,7 +2,6 @@
 
 [ext_resource path="res://scenes/user-interface/item-menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/arial.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 27
@@ -78,10 +77,6 @@ size_flags_vertical = 3
 
 [node name="ItemImage" type="TextureRect" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
 margin_bottom = 492.0
-<<<<<<< HEAD:src/scenes/user-interface/item-menu.tscn
-texture = ExtResource( 3 )
-=======
->>>>>>> Remove reference to icon.png:src/scenes/user-interface/exploration-ui.tscn
 
 [node name="ItemText" type="VBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
 margin_left = 4.0

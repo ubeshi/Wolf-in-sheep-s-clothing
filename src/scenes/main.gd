@@ -10,8 +10,3 @@ func _ready() -> void:
     # Enter ui scene
     var ui_node = ui.instance();
     add_child(ui_node);
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#    pass
