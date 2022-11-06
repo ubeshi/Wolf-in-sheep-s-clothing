@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/user-interface/item-menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/arial.ttf" type="DynamicFontData" id=2]
@@ -77,25 +77,27 @@ margin_bottom = 492.0
 size_flags_vertical = 3
 
 [node name="ItemImage" type="TextureRect" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
-margin_right = 64.0
 margin_bottom = 492.0
+<<<<<<< HEAD:src/scenes/user-interface/item-menu.tscn
 texture = ExtResource( 3 )
+=======
+>>>>>>> Remove reference to icon.png:src/scenes/user-interface/exploration-ui.tscn
 
 [node name="ItemText" type="VBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
-margin_left = 68.0
+margin_left = 4.0
 margin_right = 944.0
 margin_bottom = 492.0
 size_flags_horizontal = 3
 
 [node name="ItemLabel" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
-margin_right = 876.0
+margin_right = 940.0
 margin_bottom = 31.0
 custom_fonts/font = SubResource( 1 )
 text = "You have no items."
 
 [node name="ItemDescription" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
 margin_top = 35.0
-margin_right = 876.0
+margin_right = 940.0
 margin_bottom = 49.0
 autowrap = true
 
