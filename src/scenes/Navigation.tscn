@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/buttons/leftArrow.png" type="Texture" id=1]
+[ext_resource path="res://assets/buttons/rightArrowYellow.png" type="Texture" id=2]
+[ext_resource path="res://assets/buttons/leftArrowYellow.png" type="Texture" id=3]
+[ext_resource path="res://assets/buttons/rightArrow.png" type="Texture" id=4]
+[ext_resource path="res://scenes/navigation.gd" type="Script" id=5]
+
+[node name="Navigation" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="Arrows" type="HBoxContainer" parent="."]
+show_behind_parent = true
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 1024, 50 )
+alignment = 1
+
+[node name="LeftButton" type="TextureButton" parent="Arrows"]
+show_behind_parent = true
+margin_right = 50.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+size_flags_horizontal = 2
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 1 )
+expand = true
+
+[node name="RightButton" type="TextureButton" parent="Arrows"]
+show_behind_parent = true
+margin_left = 974.0
+margin_right = 1024.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+size_flags_horizontal = 10
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+expand = true
+
+[connection signal="pressed" from="Arrows/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="Arrows/RightButton" to="." method="_on_RightButton_pressed"]
