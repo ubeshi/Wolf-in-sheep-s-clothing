@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/buttons/rightArrowYellow.png" type="Texture" id=2]
 [ext_resource path="res://assets/buttons/leftArrowYellow.png" type="Texture" id=3]
 [ext_resource path="res://assets/buttons/rightArrow.png" type="Texture" id=4]
-[ext_resource path="res://scenes/Navigation.gd" type="Script" id=5]
+[ext_resource path="res://scenes/navigation.gd" type="Script" id=5]
 
 [node name="Navigation" type="Control"]
 anchor_right = 1.0
