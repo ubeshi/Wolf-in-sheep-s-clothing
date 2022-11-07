@@ -6,8 +6,8 @@ var exploration_ui = load("res://scenes/user-interface/item-menu.tscn");
 func _ready() -> void:
     # Add item menu
     add_scene("res://scenes/user-interface/item-menu.tscn");
-    # Add debug scene
-    add_scene("res://scenes/debug.tscn");
+    # Add foyer scene
+    add_scene("res://scenes/foyer.tscn");
 
 func add_scene(path: String) -> void:
     var scene = load(path);
