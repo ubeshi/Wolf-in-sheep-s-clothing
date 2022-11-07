@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/wolf.glb-0b268026caed5b21ee2d375a03c1cafc.scn"
+path="res://.import/Wolf.glb-5fb3b7b084169ae011c2979023f331dd.scn"
 
 [deps]
 
-source_file="res://assets/characters/wolf/wolf.glb"
-dest_files=[ "res://.import/wolf.glb-0b268026caed5b21ee2d375a03c1cafc.scn" ]
+source_file="res://assets/characters/wolf/Wolf.glb"
+dest_files=[ "res://.import/Wolf.glb-5fb3b7b084169ae011c2979023f331dd.scn" ]
 
 [params]
 
