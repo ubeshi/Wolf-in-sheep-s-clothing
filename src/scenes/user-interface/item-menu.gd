@@ -4,10 +4,14 @@ const held_items = [];
 var empty_item = EmptyItem.new();
 onready var items_menu_body_node = get_node("CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody");
 
+signal navigate_left();
+signal navigate_right();
+
 func _ready() -> void:
     add_initial_items();
     initialize_open_items_menu_button();
     initialize_close_items_menu_button();
+    initialize_arrow_menu_buttons();
 
 func add_initial_items() -> void:
     var pudding = Pudding.new();
@@ -15,6 +19,20 @@ func add_initial_items() -> void:
 
     var bloody_knife = BloodyKnife.new();
     held_items.append(bloody_knife);
+
+func initialize_arrow_menu_buttons() -> void:
+    var left_button = get_node("CanvasLayer/UI/ArrowContainer/LeftArrow");
+    var right_button = get_node("CanvasLayer/UI/ArrowContainer/RightArrow");
+    left_button.connect("pressed", self, "handle_left_navigation_button_pressed");
+    right_button.connect("pressed", self, "handle_right_navigation_button_pressed");
+    
+func handle_left_navigation_button_pressed() -> void:
+    print("navigate left a");
+    emit_signal("navigate_left");
+    
+func handle_right_navigation_button_pressed() -> void:
+    print("navigate right a");
+    emit_signal("navigate_right");
 
 func initialize_open_items_menu_button() -> void:
     var button = get_node("CanvasLayer/UI/MarginContainer/ButtonOpenItemsMenu");

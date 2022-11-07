@@ -2,22 +2,21 @@ extends Spatial
 
 var exploration_ui = preload("res://scenes/user-interface/item-menu.tscn");
 var ui = preload("res://scenes/ui.tscn");
+var ui_node;
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
     # Add exploration ui
     var exploration_ui_node = exploration_ui.instance();
+    exploration_ui_node.connect("navigate_left", self, "on_navigate_left");
+    exploration_ui_node.connect("navigate_right", self, "on_navigate_right");
     add_child(exploration_ui_node);
+
     # Enter ui scene
-    var ui_node = ui.instance();
+    ui_node = ui.instance();
     add_child(ui_node);
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#    pass
+func on_navigate_left() -> void:
+    ui_node.set_camera_position(-1);
+    
+func on_navigate_right() -> void:
+    ui_node.set_camera_position(1);
