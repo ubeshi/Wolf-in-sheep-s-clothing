@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/cube.glb-2f721f1d0f699c2b354311821fda6fbf.scn"
+path="res://.import/cube.glb-01fa9724193a5b7b603fe22a8fc47628.scn"
 
 [deps]
 
-source_file="res://assets/characters/cube.glb"
-dest_files=[ "res://.import/cube.glb-2f721f1d0f699c2b354311821fda6fbf.scn" ]
+source_file="res://assets/characters/cube/cube.glb"
+dest_files=[ "res://.import/cube.glb-01fa9724193a5b7b603fe22a8fc47628.scn" ]
 
 [params]
 
