@@ -20,20 +20,20 @@ var camera_path = ["front", "right", "back", "left"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    yield(get_tree().create_timer(4.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(4.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
 
     pass # Replace with function body.
 
@@ -50,11 +50,11 @@ func set_camera_position(rotation):
 
     for i in camera_data:
         if camera_data[i]["translation"] == camera_position:
-            print(i)
+            print('Before: ' + i)
             path = camera_path.find(i) + rotation
             if (path > (camera_path.size() - 1)):
                 path = 0
-            print(camera_path[path])
+            print('After: ' + camera_path[path])
             position = camera_data[camera_path[path]]
 
     camera.transform.origin = position["translation"]
