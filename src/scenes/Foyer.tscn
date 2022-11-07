@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://scenes/characters/iguana/Iguana.tscn" type="PackedScene" id=2]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 0.403922, 0.568627, 0.552941, 1 )
@@ -20,6 +18,3 @@ shadow_enabled = true
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.54282, 1, 0 )
 environment = SubResource( 1 )
 fov = 112.621
-
-[node name="Iguana" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.00923507, -0.00766247, 4.03678e-10, -5.24537e-10, 2.29282e-17, 0.012, -0.00766247, -0.00923507, -3.34937e-10, 0, 0, -1.05085 )
