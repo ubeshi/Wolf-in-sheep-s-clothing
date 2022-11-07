@@ -18,20 +18,21 @@ var camera_data = {
 var camera_path = ["front", "right", "back", "left"]
 
 func _ready():
-    yield(get_tree().create_timer(4.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_RightButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
-    yield(get_tree().create_timer(1.0), "timeout")
-    _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(4.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_RightButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    # yield(get_tree().create_timer(1.0), "timeout")
+    # _on_LeftButton_pressed()
+    pass
 
 func set_camera_position(rotation):
     var path
@@ -39,17 +40,17 @@ func set_camera_position(rotation):
     var camera = get_node("Camera")
     var camera_position = camera.get_camera_transform().origin
 
-#    for i in camera_data:
-#        if camera_data[i]["translation"] == camera_position:
-#            print(i)
-#            path = camera_path.find(i) + rotation
-#            if (path > (camera_path.size() - 1)):
-#                path = 0
-#            print(camera_path[path])
-#            position = camera_data[camera_path[path]]
-#
-#    camera.transform.origin = position["translation"]
-#    camera.rotate_y(rotation*PI/2)
+    for i in camera_data:
+        if camera_data[i]["translation"] == camera_position:
+            print('Before: ' + i)
+            path = camera_path.find(i) + rotation
+            if (path > (camera_path.size() - 1)):
+                path = 0
+            print('After: ' + camera_path[path])
+            position = camera_data[camera_path[path]]
+
+    camera.transform.origin = position["translation"]
+    camera.rotate_y(rotation*PI/2)
 
 func _on_LeftButton_pressed():
     set_camera_position(-1)
