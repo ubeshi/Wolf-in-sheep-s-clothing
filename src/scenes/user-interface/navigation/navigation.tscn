@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/user-interface/navigation/navigation.gd" type="Script" id=1]
+[ext_resource path="res://scenes/user-interface/navigation/camera.gd" type="Script" id=2]
 
 [node name="Navigation" type="Control"]
 anchor_right = 1.0
@@ -43,3 +44,4 @@ icon_align = 2
 
 [node name="Camera" type="Camera" parent="CameraPivot"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.54282, 1, 0 )
+script = ExtResource( 2 )
