@@ -1,7 +1,7 @@
 extends Spatial
 
 var exploration_ui = load("res://scenes/user-interface/item-menu.tscn");
-var ui = preload("res://scenes/ui.tscn");
+var ui = load("res://scenes/ui.tscn");
 
 func _ready() -> void:
     # Add exploration ui
