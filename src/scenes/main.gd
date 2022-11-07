@@ -16,9 +16,7 @@ func _ready() -> void:
     add_child(ui_node);
 
 func on_navigate_left() -> void:
-    print("navigate left called");
     ui_node.set_camera_position(-1);
     
 func on_navigate_right() -> void:
-    print("navigate right called");
     ui_node.set_camera_position(1);
