@@ -8,7 +8,8 @@ func _ready() -> void:
     exploration_ui_node.connect("navigate_left", self, "on_navigate_left");
     exploration_ui_node.connect("navigate_right", self, "on_navigate_right");
     # Add debug scene
-    ui_node = add_scene("res://scenes/ui.tscn");
+#    ui_node = add_scene("res://scenes/ui.tscn");
+    add_scene("res://scenes/debug2.tscn");
 
 func add_scene(path: String) -> Node:
     var scene = load(path);
@@ -17,7 +18,9 @@ func add_scene(path: String) -> Node:
     return node;
 
 func on_navigate_left() -> void:
-    ui_node.set_camera_position(-1);
+#    ui_node.set_camera_position(-1);
+    pass
 
 func on_navigate_right() -> void:
-    ui_node.set_camera_position(1);
+#    ui_node.set_camera_position(1);
+    pass
