@@ -4,9 +4,6 @@ const held_items = [];
 var empty_item = EmptyItem.new();
 onready var items_menu_body_node = get_node("CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody");
 
-signal navigate_left();
-signal navigate_right();
-
 func _ready() -> void:
     add_initial_items();
     initialize_open_items_menu_button();
