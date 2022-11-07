@@ -17,8 +17,6 @@ var camera_data = {
 
 var camera_path = ["front", "right", "back", "left"]
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
     yield(get_tree().create_timer(4.0), "timeout")
     _on_RightButton_pressed()
@@ -35,17 +33,10 @@ func _ready():
     yield(get_tree().create_timer(1.0), "timeout")
     _on_LeftButton_pressed()
 
-    pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 func set_camera_position(rotation):
     var path
     var position
-    var camera = get_parent().get_parent().get_node("Camera")
+    var camera = get_node("Camera")
     var camera_position = camera.get_camera_transform().origin
 
     for i in camera_data:
