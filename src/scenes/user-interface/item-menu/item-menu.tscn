@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/arial.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/user-interface/item-menu/item-menu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 27
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UI"]
+margin_right = 70.0
+margin_bottom = 40.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 0
+
+[node name="ButtonOpenItemsMenu" type="Button" parent="CanvasLayer/UI/MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Items"
+align = 0
+
+[node name="ItemsMenu" type="Control" parent="CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ItemsMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/ItemsMenu/MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1004.0
+margin_bottom = 580.0
+color = Color( 0.0858, 0.43032, 0.66, 0.894118 )
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="ItemsMenuBody" type="VBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 964.0
+margin_bottom = 540.0
+
+[node name="SelectedItem" type="HBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody"]
+margin_right = 944.0
+margin_bottom = 492.0
+size_flags_vertical = 3
+
+[node name="ItemImage" type="TextureRect" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
+margin_bottom = 492.0
+
+[node name="ItemText" type="VBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
+margin_left = 4.0
+margin_right = 944.0
+margin_bottom = 492.0
+size_flags_horizontal = 3
+
+[node name="ItemLabel" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
+margin_right = 940.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 1 )
+text = "You have no items."
+
+[node name="ItemDescription" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
+margin_top = 35.0
+margin_right = 940.0
+margin_bottom = 49.0
+autowrap = true
+
+[node name="ItemList" type="HBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody"]
+margin_top = 496.0
+margin_right = 944.0
+margin_bottom = 496.0
+
+[node name="ItemsMenuActions" type="HBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody"]
+margin_top = 500.0
+margin_right = 944.0
+margin_bottom = 520.0
+alignment = 2
+
+[node name="ButtonUseItem" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
+margin_left = 743.0
+margin_right = 780.0
+margin_bottom = 20.0
+text = "Use"
+
+[node name="ButtonCombineItem" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
+margin_left = 784.0
+margin_right = 853.0
+margin_bottom = 20.0
+text = "Combine"
+
+[node name="ButtonCloseItemsMenu" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
+margin_left = 857.0
+margin_right = 944.0
+margin_bottom = 20.0
+text = "Close Menu"
