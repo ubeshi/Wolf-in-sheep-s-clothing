@@ -1,19 +1,25 @@
 extends StaticBody
 
 onready var model = get_node("IguanaModel/10668_Iguana_v2");
+onready var shader = model.get_active_material(0).next_pass;
+var targeted = false setget set_targeted;
+
+func set_targeted(value):
+    if targeted != value:
+        targeted = value;
+        if targeted:
+            shader.set_shader_param("strength", 1);
+            pass;
+        else:
+            shader.set_shader_param("strength", 0);
+            pass;
 
 func hover_focus() -> void:
-    for index in model.get_surface_material_count():
-        var material = model.get_active_material(index).duplicate();
-        material.albedo_color = Color(255, 0, 0, 1);
-        model.set_surface_material(0, material);
+    set_targeted(true);
 
 func hover_unfocus() -> void:
-    for index in model.get_surface_material_count():
-        var material = model.get_active_material(index).duplicate();
-        material.albedo_color = Color(0, 0, 0, 1);
-        model.set_surface_material(index, material);
-
+    set_targeted(false);
+    
 func interact() -> void:
     # TODO: Add in dialogic here
     print('ribbit');
