@@ -12,5 +12,4 @@ func hover_unfocus() -> void:
     model.set_surface_material(0, original_material);
 
 func interact() -> void:
-    # TODO: Add in dialogic here
-    print('awoof');
+    pass;
