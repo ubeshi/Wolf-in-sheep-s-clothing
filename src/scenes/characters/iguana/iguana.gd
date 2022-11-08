@@ -8,5 +8,5 @@ func _ready():
 	original_material = get_node("IguanaModel/10668_Iguana_v2").get_surface_material(0).duplicate();
 
 func interact() -> void:
-	var dialog = Dialogic.start(npc + str(dialog_index))
-	get_parent().add_child(dialog)
+	var dialog = Dialogic.start(npc + str(dialog_index));
+	get_parent().add_child(dialog);
