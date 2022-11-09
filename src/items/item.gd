@@ -8,6 +8,6 @@ var label: String;
 var description: String;
 
 func pickUpItem() -> void:
-	self.queue_free();
-	emit_signal('add_item', self);
+	self.visible = false;
+	Inventory.add_item(self);
 	

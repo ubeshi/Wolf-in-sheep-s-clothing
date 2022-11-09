@@ -108,6 +108,10 @@ config/name="Wolf in sheep's clothing"
 run/main_scene="res://scenes/main.tscn"
 config/icon="res://assets/icon.png"
 
+[autoload]
+
+Inventory="*res://items/inventory.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )

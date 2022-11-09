@@ -1,6 +1,6 @@
 extends Control
 
-const held_items = [];
+var held_items = Inventory.held_items;
 var empty_item = EmptyItem.new();
 onready var items_menu_body_node = get_node("CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody");
 
@@ -59,12 +59,7 @@ func set_selected_item(item: PlayerItem) -> void:
 	var selectedItemImageNode = selectedItemNode.get_node("ItemImage");
 	var selectedItemLabelNode = selectedItemNode.get_node("ItemText/ItemLabel");
 	var selectedItemDescriptionNode = selectedItemNode.get_node("ItemText/ItemDescription");
-
+	
 	selectedItemImageNode.texture = load(item.icon_image_large);
 	selectedItemLabelNode.text = item.label;
 	selectedItemDescriptionNode.text = item.description;
-
-func add_item(item) -> void:
-	print(item)
-	var new_item = item.new();
-	held_items.append(item);

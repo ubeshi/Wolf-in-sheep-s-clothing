@@ -35,5 +35,5 @@ func get_click_selection() -> void:
 	if result and (result.collider.name == 'Wolf' or result.collider.name == 'Iguana'):
 		result.collider.interact();
 	
-	if result and (result.collider.name == 'Pudding'):
+	if result and (result.collider.is_in_group("Items")):
 		result.collider.pickUpItem();
