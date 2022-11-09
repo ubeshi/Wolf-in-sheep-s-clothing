@@ -241,6 +241,9 @@ margin_right = 944.0
 margin_bottom = 20.0
 text = "Close Menu"
 
+[connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/SecondFloorSelect/ButtonStudyMenu" to="." method="_on_ButtonStudyMenu_pressed"]
 [connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonFoyerMenu" to="." method="_on_ButtonFoyerMenu_pressed"]
+[connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonKitchenMenu" to="." method="_on_ButtonKitchenMenu_pressed"]
 [connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonLivingRoomMenu" to="." method="_on_ButtonLivingRoomMenu_pressed"]
 [connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonGardenMenu" to="." method="_on_ButtonGardenMenu_pressed"]
+[connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/BasementSelect/ButtonCellarMenu" to="." method="_on_ButtonCellarMenu_pressed"]

@@ -55,3 +55,18 @@ func _on_ButtonLivingRoomMenu_pressed():
     emit_signal("switch_room", "living-room");
     set_active_room("LivingRoom");
     handle_close_rooms_menu_button_pressed();
+
+func _on_ButtonStudyMenu_pressed():
+    emit_signal("switch_room", "study");
+    set_active_room("Study");
+    handle_close_rooms_menu_button_pressed();
+
+func _on_ButtonKitchenMenu_pressed():
+    emit_signal("switch_room", "kitchen");
+    set_active_room("Kitchen");
+    handle_close_rooms_menu_button_pressed();
+
+func _on_ButtonCellarMenu_pressed():
+    emit_signal("switch_room", "cellar");
+    set_active_room("Cellar");
+    handle_close_rooms_menu_button_pressed();
