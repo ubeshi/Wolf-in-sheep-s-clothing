@@ -6,6 +6,7 @@ func _ready():
 var mouse = Vector2();
 
 func _input(event):
+    # FIXME: Need to validate that this is not on an item, navigation or other UI panel to prevent double clicking 
     if event is InputEventMouse:
         mouse = event.position;
         get_hover_selection();
