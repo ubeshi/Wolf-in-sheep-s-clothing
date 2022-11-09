@@ -242,4 +242,5 @@ margin_bottom = 20.0
 text = "Close Menu"
 
 [connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonFoyerMenu" to="." method="_on_ButtonFoyerMenu_pressed"]
+[connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonLivingRoomMenu" to="." method="_on_ButtonLivingRoomMenu_pressed"]
 [connection signal="pressed" from="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect/ButtonGardenMenu" to="." method="_on_ButtonGardenMenu_pressed"]
