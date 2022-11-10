@@ -1,26 +1,24 @@
-extends Control
+extends Menu
 
 var held_items = Inventory.held_items;
 var empty_item = EmptyItem.new();
-onready var items_menu_body_node = get_node("CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody");
+
+var items_menu_body_node_path = "CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody";
+onready var items_menu_body_node = get_node(items_menu_body_node_path);
+
+func _init() -> void:
+    self.open_menu_button_path = "CanvasLayer/UI/MarginContainer/ButtonOpenItemsMenu";
+    self.close_menu_button_path = items_menu_body_node_path + "/ItemsMenuActions/ButtonCloseItemsMenu";
+    self.menu_path = "CanvasLayer/ItemsMenu";
 
 func _ready() -> void:
     add_initial_items();
-    initialize_open_items_menu_button();
-    initialize_close_items_menu_button();
 
 func add_initial_items() -> void:
     var bloody_knife = BloodyKnife.new();
     held_items.append(bloody_knife);
 
-func initialize_open_items_menu_button() -> void:
-    var button = get_node("CanvasLayer/UI/MarginContainer/ButtonOpenItemsMenu");
-    button.connect("pressed", self, "handle_open_items_menu_button_pressed");
-
-func handle_open_items_menu_button_pressed() -> void:
-    var items_menu_node = get_node("CanvasLayer/ItemsMenu");
-    items_menu_node.visible = true;
-
+func handle_menu_opened() -> void:
     if held_items.size() > 0:
         set_selected_item(held_items[0]);
     else:
@@ -31,14 +29,7 @@ func handle_open_items_menu_button_pressed() -> void:
     for button in buttons:
         item_list_node.add_child(button);
 
-func initialize_close_items_menu_button() -> void:
-    var button = items_menu_body_node.get_node("ItemsMenuActions/ButtonCloseItemsMenu");
-    button.connect("pressed", self, "handle_close_items_menu_button_pressed");
-
-func handle_close_items_menu_button_pressed() -> void:
-    var items_menu_node = get_node("CanvasLayer/ItemsMenu");
-    items_menu_node.visible = false;
-
+func handle_menu_closed() -> void:
     var item_list_node = items_menu_body_node.get_node("ItemList");
     for item in item_list_node.get_children():
         item_list_node.remove_child(item);
