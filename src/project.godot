@@ -110,7 +110,7 @@ config/icon="res://assets/icon.png"
 
 [autoload]
 
-Inventory="*res://items/inventory.gd"
+Inventory="*res://autoloads/inventory.gd"
 
 [editor_plugins]
 
