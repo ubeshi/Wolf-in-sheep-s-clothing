@@ -46,7 +46,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Looks like the "
+			"text": "Looks like the horse died by hanging."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That Sucks"
 		},
 		{
 			"choice": "Leg",
@@ -101,6 +107,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1668052610.json",
-		"name": "deadhorse0"
+		"name": "horse0"
 	}
 }
