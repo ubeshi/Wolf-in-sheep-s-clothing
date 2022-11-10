@@ -33,4 +33,3 @@ func on_switch_room(new_room_name) -> void:
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
-

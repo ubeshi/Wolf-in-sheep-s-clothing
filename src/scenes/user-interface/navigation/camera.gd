@@ -1,8 +1,5 @@
 extends Camera
 
-func _ready():
-    pass # Replace with function body.
-
 var mouse = Vector2();
 
 func _input(event):
