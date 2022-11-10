@@ -20,7 +20,7 @@ func get_hover_selection() -> void:
     for character in characters:
         character.hover_unfocus();
 
-    if result and (result.collider.name == 'Wolf' or result.collider.name == 'Iguana'):
+    if result and result.collider.is_in_group("Characters"):
         result.collider.hover_focus();
 
 func get_click_selection() -> void:
@@ -29,7 +29,7 @@ func get_click_selection() -> void:
     var end = project_position(mouse, 1000);
     var result = worldspace.intersect_ray(start, end);
 
-    if result and (result.collider.name == 'Wolf' or result.collider.name == 'Iguana'):
+    if result and result.collider.is_in_group("Characters"):
         result.collider.interact();
 
     if result and (result.collider.is_in_group("Items")):
