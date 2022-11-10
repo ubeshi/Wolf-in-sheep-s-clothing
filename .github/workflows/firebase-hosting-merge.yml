@@ -1,4 +1,8 @@
 name: Deploy to Firebase Hosting on merge
+
+env:
+  GODOT_VERSION: 3.5.1
+
 'on':
   push:
     branches:
@@ -8,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: barichello/godot-ci:3.2.2
+      image: barichello/godot-ci:3.5.1
 
     steps:
       - name: Checkout
