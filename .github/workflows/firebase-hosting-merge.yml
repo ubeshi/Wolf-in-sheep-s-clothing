@@ -1,4 +1,8 @@
 name: Deploy to Firebase Hosting on merge
+
+env:
+  GODOT_VERSION: 3.5.1
+
 'on':
   push:
     branches:
