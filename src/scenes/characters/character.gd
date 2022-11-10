@@ -13,4 +13,4 @@ func hover_unfocus() -> void:
 
 func interact() -> void:
     # TODO: Add in dialogic here
-    print('awoof');
+    print('i\'m dead');
