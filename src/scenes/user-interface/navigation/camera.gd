@@ -6,7 +6,6 @@ func _ready():
 var mouse = Vector2();
 
 func _input(event):
-    # FIXME: Need to validate that this is not on an item, navigation or other UI panel to prevent double clicking 
     if event is InputEventMouse:
         mouse = event.position;
         get_hover_selection();
@@ -23,7 +22,7 @@ func get_hover_selection() -> void:
     var characters = get_tree().get_nodes_in_group("Characters");
     for character in characters:
         character.hover_unfocus();
-        
+
     if result and (result.collider.name == 'Wolf' or result.collider.name == 'Iguana'):
         result.collider.hover_focus();
 
@@ -35,3 +34,6 @@ func get_click_selection() -> void:
 
     if result and (result.collider.name == 'Wolf' or result.collider.name == 'Iguana'):
         result.collider.interact();
+
+    if result and (result.collider.is_in_group("Items")):
+        result.collider.pickUpItem();

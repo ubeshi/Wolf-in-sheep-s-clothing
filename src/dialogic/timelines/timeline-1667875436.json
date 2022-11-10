@@ -1,0 +1,27 @@
+{
+	"events": [
+		{
+			"character": "character-1667875473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "i gu a n a... has ta"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "has to what?"
+		},
+		{
+			"character": "character-1667875473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hasta mañana"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1667875436.json",
+		"name": "Iguana0"
+	}
+}

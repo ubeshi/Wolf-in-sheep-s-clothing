@@ -26,11 +26,11 @@ func add_rooms() -> void:
 func on_switch_room(new_room_name) -> void:
     if new_room_name != active_room_name:
         active_room_name = new_room_name;
-        
+
         if active_room:
             remove_child(active_room);
-        
+
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
-        
+
