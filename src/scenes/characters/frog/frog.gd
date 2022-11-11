@@ -1,7 +1,7 @@
 extends "res://scenes/characters/character.gd";
 
-onready var npc = "frog";
-onready var dialog_index = 0;
+func _init():
+    self.npc = "frog";
 
 func _ready():
     model = get_node("FrogModel/frog_mascot");

@@ -1,7 +1,7 @@
 extends "res://scenes/characters/character.gd";
 
-onready var npc = "cat";
-onready var dialog_index = 0;
+func _init():
+    self.npc = "cat";
 
 func _ready():
     model = get_node("CatModel/12221_Cat_v1_l3");

@@ -1,7 +1,7 @@
 extends "res://scenes/characters/character.gd";
 
-onready var npc = "bunny";
-onready var dialog_index = 0;
+func _init():
+    self.npc = "bunny";
 
 func _ready():
     model = get_node("BunnyModel/bunnyMesh");
