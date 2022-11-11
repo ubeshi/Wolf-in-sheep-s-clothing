@@ -1,6 +1,5 @@
 extends Spatial
 
-var room_navigation = null;
 var active_room = null;
 var active_room_name = "";
 

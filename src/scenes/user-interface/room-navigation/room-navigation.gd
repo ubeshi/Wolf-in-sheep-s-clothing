@@ -1,14 +1,20 @@
-extends Control
+extends Menu
 
 const rooms = ["Study", "Foyer", "Kitchen", "LivingRoom", "Cellar", "Garden"];
-onready var rooms_menu_body_node = get_node("CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody");
+
 var active_room = null setget set_active_room;
+
+var rooms_menu_body_node_path = "CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"
+onready var rooms_menu_body_node = get_node(rooms_menu_body_node_path);
 
 signal switch_room(room);
 
+func _init() -> void:
+    self.open_menu_button_path = "CanvasLayer/UI/MarginContainer/ButtonOpenRoomsMenu";
+    self.close_menu_button_path = rooms_menu_body_node_path + "/RoomsMenuActions/ButtonCloseRoomsMenu";
+    self.menu_path = "CanvasLayer/RoomsMenu";
+
 func _ready() -> void:
-    initialize_open_rooms_menu_button();
-    initialize_close_rooms_menu_button();
     set_active_room("Foyer");
 
 func set_active_room(value) -> void:
@@ -21,21 +27,13 @@ func set_active_room(value) -> void:
             else:
                 button.disabled = false;
 
-func initialize_open_rooms_menu_button() -> void:
-    var button = get_node("CanvasLayer/UI/MarginContainer/ButtonOpenRoomsMenu");
-    button.connect("pressed", self, "handle_open_rooms_menu_button_pressed");
-
-func initialize_close_rooms_menu_button() -> void:
-    var button = rooms_menu_body_node.get_node("RoomsMenuActions/ButtonCloseRoomsMenu");
-    button.connect("pressed", self, "handle_close_rooms_menu_button_pressed");
-
-func handle_open_rooms_menu_button_pressed() -> void:
+func handle_menu_opened() -> void:
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
     rooms_menu_node.set_physics_process(true);
     rooms_menu_node.set_process_input(true);
     rooms_menu_node.visible = true;
 
-func handle_close_rooms_menu_button_pressed() -> void:
+func handle_menu_closed() -> void:
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
     rooms_menu_node.set_physics_process(false);
     rooms_menu_node.set_process_input(false);
@@ -44,29 +42,29 @@ func handle_close_rooms_menu_button_pressed() -> void:
 func _on_ButtonGardenMenu_pressed():
     emit_signal("switch_room", "garden");
     set_active_room("Garden");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
 
 func _on_ButtonFoyerMenu_pressed():
     emit_signal("switch_room", "foyer");
     set_active_room("Foyer");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
 
 func _on_ButtonLivingRoomMenu_pressed():
     emit_signal("switch_room", "living-room");
     set_active_room("LivingRoom");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
 
 func _on_ButtonStudyMenu_pressed():
     emit_signal("switch_room", "study");
     set_active_room("Study");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
 
 func _on_ButtonKitchenMenu_pressed():
     emit_signal("switch_room", "kitchen");
     set_active_room("Kitchen");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
 
 func _on_ButtonCellarMenu_pressed():
     emit_signal("switch_room", "cellar");
     set_active_room("Cellar");
-    handle_close_rooms_menu_button_pressed();
+    .handle_close_menu_button_pressed();
