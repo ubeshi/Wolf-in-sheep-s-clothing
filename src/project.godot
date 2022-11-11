@@ -111,7 +111,6 @@ config/icon="res://assets/icon.png"
 [autoload]
 
 Inventory="*res://items/inventory.gd"
-GameState="*res://autoloads/game-state.gd"
 
 [editor_plugins]
 
