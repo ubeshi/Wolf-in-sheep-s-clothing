@@ -1,7 +1,7 @@
 extends "res://scenes/characters/character.gd";
 
-onready var npc = "fox";
-onready var dialog_index = 0;
+func _init():
+    self.npc = "fox";
 
 func _ready():
     model = get_node("FoxModel/foxMesh");
