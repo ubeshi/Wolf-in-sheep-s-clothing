@@ -7,7 +7,10 @@ var icon_image_large: String;
 var label: String;
 var description: String;
 
-func pickUpItem() -> void:
-    if (!GameState.is_in_interaction()):
+func _ready() -> void:
+    if (Inventory.is_item_picked_up(self)):
         self.visible = false;
-        Inventory.add_item(self);
+
+func pick_up_item() -> void:
+    self.visible = false;
+    Inventory.add_item(self);

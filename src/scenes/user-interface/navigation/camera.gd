@@ -34,4 +34,4 @@ func get_click_selection() -> void:
         result.collider.interact();
 
     if result and (result.collider.is_in_group("Items")):
-        result.collider.pickUpItem();
+        result.collider.pick_up_item();
