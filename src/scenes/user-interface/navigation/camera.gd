@@ -5,9 +5,10 @@ var mouse = Vector2();
 func _input(event):
     if event is InputEventMouse:
         mouse = event.position;
-        get_hover_selection();
+        if !GameState.is_in_interaction():
+            get_hover_selection();
     if event is InputEventMouseButton and event.pressed:
-        if event.button_index == BUTTON_LEFT:
+        if event.button_index == BUTTON_LEFT and !GameState.is_in_interaction():
             get_click_selection();
 
 func get_hover_selection() -> void:
