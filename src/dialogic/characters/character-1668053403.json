@@ -1,11 +1,11 @@
 {
-	"color": "#ff4bb139",
+	"color": "#ffffffff",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1667875473.json",
+	"id": "character-1668053403.json",
 	"mirror_portraits": false,
-	"name": "Iguana",
+	"name": "Bunny",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -17,5 +17,5 @@
 		}
 	],
 	"scale": 100,
-	"theme": ""
+	"theme": "theme-1667934674.cfg"
 }
