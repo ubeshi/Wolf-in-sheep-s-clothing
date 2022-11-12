@@ -9,4 +9,5 @@ func _ready():
 
 func interact() -> void:
     var dialog = Dialogic.start(npc + str(dialog_index));
+    dialog_index += 1;
     get_parent().add_child(dialog);

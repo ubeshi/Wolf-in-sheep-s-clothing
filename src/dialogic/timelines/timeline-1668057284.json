@@ -1,0 +1,56 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1668287260-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WELL WELL WELL if it isnt the murdererer"
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah go away!!!"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh dont be such a scaredy-cat Frog"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It wasn't me! I'm being framed."
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm well you'll have to prove it!"
+		},
+		{
+			"definition": "1668287260-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668057284.json",
+		"name": "cat0"
+	}
+}
