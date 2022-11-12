@@ -17,6 +17,7 @@ func interact() -> void:
     if (!GameState.is_in_interaction()):
         GameState.set_is_in_dialogue(true);
         var dialog = Dialogic.start(npc + str(dialog_index));
+        Dialogic.set_variable("CatFrogTimeline", 0);
         dialog.connect("timeline_end", self, "dialog_ended");
         add_child(dialog);
 

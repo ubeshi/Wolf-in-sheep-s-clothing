@@ -1,0 +1,86 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1668287260-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Please dont kill me!"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "PULL YOURSELF TOGETHER FROG"
+		},
+		{
+			"character": "character-1667876666.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don't you want to find the real killer?\nCould you please just tell me where you were during the murder? "
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Promise not to kill us?!"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We were here in the cellar trying out these fancyy wines."
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah! We were having a great time\nThe cabernet sauvignon?!?\nChefs kiss"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Were you two in the cellar alone the whole time?"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmmm I think I heard someone come down but we were right in the middle of naming all the tasting notes! "
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, I heard em!\nThey mustve gone back upstairs pretty quick because by the time we turned around they were gone"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm now that I think about it the rope that was holding the hay bales together is gone\nMaybe thats what they came to the cellar for?"
+		},
+		{
+			"definition": "1668287260-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668057459.json",
+		"name": "frog0"
+	}
+}
