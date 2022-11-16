@@ -7,6 +7,7 @@ func _ready() -> void:
     # Add UI
     add_rooms();
     add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
+    add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     add_scene("res://scenes/user-interface/navigation/navigation.tscn");
 
     # Add debug scene
