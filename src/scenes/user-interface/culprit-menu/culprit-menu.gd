@@ -41,14 +41,12 @@ func handle_menu_closed() -> void:
 
 func get_culprit_list_buttons(culprits: Array) -> Array:
     var buttons = [];
-    var i = 0;
     for culprit in culprits:
         var button = TextureButton.new();
         var texture = load(culprit.image);
         button.texture_normal = texture;
         button.connect("pressed", self, "set_selected_culprit", [culprit]);
         buttons.append(button);
-        i += 1;
     return buttons;
 
 func set_selected_culprit(culprit: Culprit) -> void:
