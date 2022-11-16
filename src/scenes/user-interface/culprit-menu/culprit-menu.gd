@@ -47,17 +47,16 @@ func get_culprit_list_buttons(culprits: Array) -> Array:
         var button = TextureButton.new();
         var texture = load(culprit.image);
         button.texture_normal = texture;
-        button.connect("pressed", self, "set_selected_culprit", [culprit, i]);
+        button.connect("pressed", self, "set_selected_culprit", [culprit]);
         buttons.append(button);
         i += 1;
     return buttons;
 
-func set_selected_culprit(culprit: Culprit, index: int) -> void:
+func set_selected_culprit(culprit: Culprit) -> void:
     var selectedCulpritNode = culprit_menu_body_node.get_node("SelectedCulprit");
     var selectedItemImageNode = selectedCulpritNode.get_node("CulpritImage");
     var selectedItemLabelNode = selectedCulpritNode.get_node("CulpritText/CulpritLabel");
     var selectedItemDescriptionNode = selectedCulpritNode.get_node("CulpritText/CulpritDescription");
-    var arr = [1, 2, 3];
     var culprit_hints;
     match culprit:
         pig:
@@ -73,6 +72,7 @@ func set_selected_culprit(culprit: Culprit, index: int) -> void:
         frog:
             culprit_hints = frog_hints;
 
+    var arr = [1, 2, 3];
     for i in arr:
         var node_path = "CulpritText/CulpritHint" + str(i);
         var selectedHintNode = selectedCulpritNode.get_node(node_path);
