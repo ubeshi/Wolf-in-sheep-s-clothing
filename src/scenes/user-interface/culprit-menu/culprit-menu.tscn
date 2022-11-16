@@ -59,33 +59,41 @@ margin_bottom = 560.0
 [node name="CulpritImage" type="TextureRect" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
 margin_right = 16.0
 
-[node name="CulpritText" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
+[node name="CulpritText" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="CulpritLabel" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+margin_top = 4.0
+margin_bottom = 18.0
+
+[node name="CulpritDescription" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 4.0
+margin_bottom = 18.0
+
+[node name="CulpritHint1" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+margin_left = 8.0
+margin_top = 4.0
+margin_right = 8.0
+margin_bottom = 18.0
+
+[node name="CulpritHint2" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+margin_left = 12.0
+margin_top = 4.0
+margin_right = 12.0
+margin_bottom = 18.0
+
+[node name="CulpritHint3" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+margin_left = 16.0
 margin_top = 4.0
 margin_right = 16.0
 margin_bottom = 18.0
 
-[node name="CulpritLabel" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_bottom = 14.0
-
-[node name="CulpritDescription" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 4.0
-margin_right = 4.0
-margin_bottom = 14.0
-
-[node name="CulpritHint1" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 8.0
-margin_right = 8.0
-margin_bottom = 14.0
-
-[node name="CulpritHint2" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 12.0
-margin_right = 12.0
-margin_bottom = 14.0
-
-[node name="CulpritHint3" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 16.0
-margin_right = 16.0
-margin_bottom = 14.0
+[node name="CulpritList" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
+margin_right = 40.0
+margin_bottom = 40.0
 
 [node name="CulpritMenuActions" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
 margin_left = 20.0
