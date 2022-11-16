@@ -1,0 +1,28 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1668568200-648",
+			"event_id": "dialogic_012",
+			"value": "True"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quest Complete"
+		},
+		{
+			"emit_signal": "iguana_complete",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668568182.json",
+		"name": "iguana1"
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1668654821-648",
+			"name": "bunny_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654833-787",
+			"name": "bunny_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668654847-366",
+			"name": "cat_frog_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654856-146",
+			"name": "cat_frog_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668654902-918",
+			"name": "fox_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654910-483",
+			"name": "fox_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668654920-970",
+			"name": "horse_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654930-713",
+			"name": "horse_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668569259-787",
+			"name": "iguana_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668568200-648",
+			"name": "iguana_quest_complete",
+			"type": 0,
+			"value": "False"
+		}
+	]
+}

@@ -6,6 +6,7 @@ var active_room_name = "";
 func _ready() -> void:
     # Add UI
     add_rooms();
+    add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     add_scene("res://scenes/user-interface/navigation/navigation.tscn");
 

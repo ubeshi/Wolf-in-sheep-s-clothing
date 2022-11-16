@@ -9,3 +9,4 @@ func _init():
     self.description = "A sweet, milk-based dessert similar in consistency to " \
         + "egg-based custards, instant custards, or a mousse, often commercially " \
         + "set using cornstarch, gelatin or similar coagulating agent.";
+    self.quest_id = 1;

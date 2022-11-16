@@ -6,6 +6,7 @@ var icon_image_small: String;
 var icon_image_large: String;
 var label: String;
 var description: String;
+var quest_id: int;
 
 func _ready() -> void:
     if (Inventory.is_item_picked_up(self)):
