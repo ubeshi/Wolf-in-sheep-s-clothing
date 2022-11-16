@@ -15,7 +15,6 @@ var fox_hints = CulpritHints.fox_hints;
 var frog_hints = CulpritHints.frog_hints;
 
 var characters = [pig, bunny, cat, dog, fox, frog];
-var hints = [pig_hints, bunny_hints, cat_hints, dog_hints, fox_hints, frog_hints];
 
 var culprit_menu_body_node_path = "CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody";
 onready var culprit_menu_body_node = get_node(culprit_menu_body_node_path);
@@ -57,7 +56,7 @@ func set_selected_culprit(culprit: Culprit) -> void:
     var selectedItemImageNode = selectedCulpritNode.get_node("CulpritImage");
     var selectedItemLabelNode = selectedCulpritNode.get_node("CulpritText/CulpritLabel");
     var selectedItemDescriptionNode = selectedCulpritNode.get_node("CulpritText/CulpritDescription");
-    var culprit_hints;
+    var culprit_hints = [];
     match culprit:
         pig:
             culprit_hints = pig_hints;
