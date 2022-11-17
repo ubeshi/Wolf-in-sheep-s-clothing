@@ -1,11 +1,11 @@
 {
-	"color": "#ff5b5a5a",
+	"color": "#ffffc659",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1667882996.json",
+	"id": "character-1668058298.json",
 	"mirror_portraits": false,
-	"name": "Wolf",
+	"name": "Fox",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -17,5 +17,5 @@
 		}
 	],
 	"scale": 100,
-	"theme": "theme-1667934674.cfg"
+	"theme": ""
 }

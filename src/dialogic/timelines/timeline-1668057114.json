@@ -1,0 +1,111 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What's up dog? Where were you during the murder?"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I was with the Fox in the living room"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "After talking to the Fox for a while, I went to the garden to get some fresh air"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's so cold outside though... I went back into the kitchen and smelled something delicious"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I traced the smell down to the cellar where I found Cat and Frog trying out some new wines"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I just hung around them and had some wine until we heard the commotion and went upstairs"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Looks like the Dog was with Cat and Frog during the murder."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668057114.json",
+		"name": "dog0"
+	}
+}
