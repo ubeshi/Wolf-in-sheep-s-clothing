@@ -6,7 +6,7 @@ func _init():
         start_signal = 'bunny_quest',
         end_signal = 'bunny_complete',
         quest = BunnyQuest.new(),
-        item = Pudding.new().label  # Bag.new().label
+        item = Backpack.new().label  # Bag.new().label
        };
 
 func _ready():
