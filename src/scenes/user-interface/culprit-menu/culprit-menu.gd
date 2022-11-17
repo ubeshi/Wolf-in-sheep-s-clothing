@@ -32,6 +32,7 @@ func handle_menu_opened() -> void:
     var buttons = get_culprit_list_buttons(characters);
     for button in buttons:
         culprit_list_node.add_child(button);
+    set_selected_culprit(characters[0]);
 
 func handle_menu_closed() -> void:
     var culprit_list_node = culprit_menu_body_node.get_node("CulpritList");
@@ -43,7 +44,7 @@ func get_culprit_list_buttons(culprits: Array) -> Array:
     var buttons = [];
     for culprit in culprits:
         var button = TextureButton.new();
-        var texture = load(culprit.image);
+        var texture = load(culprit.image_small);
         button.texture_normal = texture;
         button.connect("pressed", self, "set_selected_culprit", [culprit]);
         buttons.append(button);
@@ -78,6 +79,6 @@ func set_selected_culprit(culprit: Culprit) -> void:
         else:
             selectedHintNode.text = "hint not available";
 
-    selectedItemImageNode.texture = load(culprit.image);
+    selectedItemImageNode.texture = load(culprit.image_large);
     selectedItemLabelNode.text = culprit.label;
     selectedItemDescriptionNode.text = culprit.description;

@@ -48,56 +48,49 @@ margin_top = 0.200001
 margin_right = 0.47998
 margin_bottom = 17.8
 
-[node name="CulpritMenuBody" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer"]
+[node name="CulpritMenuBody" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer"]
 margin_right = 984.0
 margin_bottom = 560.0
+alignment = 2
 
-[node name="SelectedCulprit" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
-margin_right = 16.0
+[node name="SelectedCulprit" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
+margin_left = 889.0
+margin_right = 889.0
 margin_bottom = 560.0
 
 [node name="CulpritImage" type="TextureRect" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
-margin_right = 16.0
+margin_bottom = 40.0
 
 [node name="CulpritText" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_top = 4.0
+margin_bottom = 90.0
 
 [node name="CulpritLabel" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_top = 4.0
-margin_bottom = 18.0
+margin_bottom = 14.0
 
 [node name="CulpritDescription" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 4.0
-margin_top = 4.0
-margin_right = 4.0
-margin_bottom = 18.0
+margin_top = 18.0
+margin_bottom = 32.0
 
 [node name="CulpritHint1" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 8.0
-margin_top = 4.0
-margin_right = 8.0
-margin_bottom = 18.0
+margin_top = 36.0
+margin_bottom = 50.0
 
 [node name="CulpritHint2" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 12.0
-margin_top = 4.0
-margin_right = 12.0
-margin_bottom = 18.0
+margin_top = 54.0
+margin_bottom = 68.0
 
 [node name="CulpritHint3" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
-margin_left = 16.0
-margin_top = 4.0
-margin_right = 16.0
-margin_bottom = 18.0
+margin_top = 72.0
+margin_bottom = 86.0
 
 [node name="CulpritList" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 893.0
+margin_right = 893.0
+margin_bottom = 560.0
 
 [node name="CulpritMenuActions" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
-margin_left = 20.0
-margin_right = 107.0
+margin_right = 984.0
 margin_bottom = 560.0
 
 [node name="ButtonCloseCulpritMenu" type="Button" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/CulpritMenuActions"]
