@@ -1,0 +1,54 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1668287260-648",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I found the homegrown wine!"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "AH! YES YES YES! I've been dying to try this."
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "OH LORD\nTHE FLAVOURS ARE MELTING ON MY TOUNGE!"
+		},
+		{
+			"character": "character-1667876666.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, now whats the secret you two mentioned?"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well...Frog and I were thinking about how Horse went into the kitchen"
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The basement is connected to the kitchen\nSo whoever was in the kitchen must know something about what happened to Horse"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668058598.json",
+		"name": "cat2"
+	}
+}
