@@ -10,3 +10,7 @@ func _init():
         + "egg-based custards, instant custards, or a mousse, often commercially " \
         + "set using cornstarch, gelatin or similar coagulating agent.";
     self.quest_id = 1;
+
+func _ready():
+    self.model = get_node("PuddingModel/Pudding");
+    self.original_material = get_node("PuddingModel/Pudding").get_surface_material(0).duplicate();
