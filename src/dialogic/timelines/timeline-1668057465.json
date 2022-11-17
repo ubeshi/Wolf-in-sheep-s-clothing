@@ -1,0 +1,62 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1668287260-648",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "OH WOLF!!"
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Theres one more thing we forgot to mention!\nDog came down to try some of the fancy wine with us after the hay bale rope when missing"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We just finished pouring a glass for Dog when we heard all the commotion upstairs"
+		},
+		{
+			"character": "character-1667876666.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm very interesting"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WAIT! Before you go\nHorse promised us that we could try some of his homegrown wine before he was...\nYou know...\nKilled..\nHe said he left in the kitchen and never came back"
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Could you bring it for us?\nIf you do we'll let you in on a little secret!"
+		},
+		{
+			"definition": "1668287260-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668057465.json",
+		"name": "cat1"
+	}
+}
