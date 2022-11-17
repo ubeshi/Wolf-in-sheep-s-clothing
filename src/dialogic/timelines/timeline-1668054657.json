@@ -1,0 +1,39 @@
+{
+	"events": [
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bunny, I found your bag in the study\nHere you go!"
+		},
+		{
+			"character": "character-1668053403.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "BLIMEY!\nwell init this a surprise\nThank ya, Wolf\n...\n...\nya didnt happen ta look in me bag did ya?"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "uhm.. no?"
+		},
+		{
+			"character": "character-1668053403.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "good on ya then....\nwell.. best be careful. seems we've got a killer in the midst"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "yeah... you too..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668054657.json",
+		"name": "bunny2"
+	}
+}

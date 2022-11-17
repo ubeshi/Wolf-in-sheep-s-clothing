@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1668053403.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well.... crack on then!\n*struggles to cut the cake with its supple paws* \nUGH...this CAKE wont cut"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Do you want some help with that?"
+		},
+		{
+			"character": "character-1668053403.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'll be allroight\nI wos workin on this bloke with a much sharpa knife\nHm... mightve been in me backpack but I seem to have misplaced it!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "... The bunny seems to be missing something. Take a look around to see if you can find it."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668054629.json",
+		"name": "bunny1"
+	}
+}
