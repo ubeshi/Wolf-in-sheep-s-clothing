@@ -1,7 +1,7 @@
 extends "res://scenes/characters/character.gd";
 
-onready var npc = "horse";
-onready var dialog_index = 0;
+func _init():
+    self.npc = "horse";
 
 func _ready():
     model = get_node("HorseModel/16267_American_Paint_Horse_Nuetral_new");
