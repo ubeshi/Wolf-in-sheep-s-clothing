@@ -10,9 +10,19 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "PlayerItem",
+"class": "Backpack",
+"language": "GDScript",
+"path": "res://items/backpack/backpack.gd"
+}, {
+"base": "PlayerItem",
 "class": "BloodyKnife",
 "language": "GDScript",
 "path": "res://items/bloody-knife/bloody-knife.gd"
+}, {
+"base": "PlayerItem",
+"class": "Cake",
+"language": "GDScript",
+"path": "res://items/cake/cake.gd"
 }, {
 "base": "Reference",
 "class": "DTS",
@@ -69,6 +79,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/empty-item/empty-item.gd"
 }, {
+"base": "PlayerItem",
+"class": "Haybale",
+"language": "GDScript",
+"path": "res://items/haybale/haybale.gd"
+}, {
 "base": "PanelContainer",
 "class": "HistoryRow",
 "language": "GDScript",
@@ -88,9 +103,21 @@ _global_script_classes=[ {
 "class": "Pudding",
 "language": "GDScript",
 "path": "res://items/pudding/pudding.gd"
+}, {
+"base": "PlayerItem",
+"class": "TopHat",
+"language": "GDScript",
+"path": "res://items/top-hat/top-hat.gd"
+}, {
+"base": "PlayerItem",
+"class": "WineBottle",
+"language": "GDScript",
+"path": "res://items/wine-bottle/wine-bottle.gd"
 } ]
 _global_script_class_icons={
+"Backpack": "",
 "BloodyKnife": "",
+"Cake": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
@@ -102,10 +129,13 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "EmptyItem": "",
+"Haybale": "",
 "HistoryRow": "",
 "Menu": "",
 "PlayerItem": "",
-"Pudding": ""
+"Pudding": "",
+"TopHat": "",
+"WineBottle": ""
 }
 
 [application]
