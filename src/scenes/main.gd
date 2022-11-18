@@ -5,6 +5,7 @@ var active_room_name = "";
 
 var introduction_scene;
 var story_scene_one_scene;
+var study_intro_scene;
 
 func _ready() -> void:
     start_introduction();
@@ -23,6 +24,14 @@ func start_story_scene_one() -> void:
 
 func end_story_scene_one() -> void:
     remove_child(story_scene_one_scene);
+    start_study_intro();
+
+func start_study_intro() -> void:
+    study_intro_scene = add_scene("res://scenes/study-intro/study-intro.tscn");
+    study_intro_scene.connect("finished", self, "end_study_intro");
+
+func end_study_intro() -> void:
+    remove_child(study_intro_scene);
     start_investigation_scene();
 
 func start_investigation_scene() -> void:
