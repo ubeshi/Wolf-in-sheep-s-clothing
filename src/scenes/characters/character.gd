@@ -16,20 +16,19 @@ func hover_unfocus() -> void:
 func interact() -> void:
     if (!GameState.is_in_interaction()):
         GameState.set_is_in_dialogue(true);
-        if Quests.quest_list.has(fetch_quest.quest) == true:
-            for item in Inventory.held_items:
-                print('item.label', item.label)
-                print('fetch_quest.quest.item.label', fetch_quest.quest.item.label)
-                if item.label == fetch_quest.quest.item.label:
-                    print('holding quest item')
-                    Dialogic.set_variable(npc + '_quest_complete', true)
-                    print(npc + 'quest_complete', Dialogic.get_variable(npc + '_quest_complete', true))
+        quest_status();
         var index = Dialogic.get_variable(npc + '_index');
-        print(index);
         var dialog = Dialogic.start(npc + str(index));
         dialog.connect("timeline_end", self, "dialog_ended");
         dialog.connect("dialogic_signal", self, "dialogic_signal_event");
         add_child(dialog);
+
+func quest_status() -> void:
+    for quest in Quests.quest_list:
+        if quest.label == fetch_quest.quest.label:
+            for item in Inventory.held_items:
+                if item.label == fetch_quest.quest.item.label:
+                    Dialogic.set_variable(npc + '_quest_complete', true)
 
 func dialog_ended(_timeline_name) -> void:
     GameState.set_is_in_dialogue(false);

@@ -59,6 +59,18 @@
 			"text": "Heres your Top Hat back."
 		},
 		{
+			"emit_signal": "dog_complete",
+			"event_id": "dialogic_040"
+		},
+		{
+			"definition": "1668664206-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "False"
+		},
+		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -68,7 +80,17 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Thats because I didnt!"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "By the way, I smelled something strange in the garden early.\nMaybe you should take a look around."
+		},
+		{
+			"emit_signal": "dog_quest",
+			"event_id": "dialogic_040"
 		},
 		{
 			"definition": "1668664212-787",
@@ -77,6 +99,9 @@
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"

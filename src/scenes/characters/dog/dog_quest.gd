@@ -6,3 +6,7 @@ func _init():
     self.label = "dog";
     self.description = "Add Dog Quest.";
     self.item = TopHat.new();
+
+func KnifeQuest():
+    self.description = "Add Dog Knife Quest";
+    self.item = BloodyKnife.new();
