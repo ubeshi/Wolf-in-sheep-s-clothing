@@ -104,11 +104,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scenes/characters/fox/fox_quest.gd"
 }, {
-"base": "PlayerQuest",
-"class": "FrogQuest",
-"language": "GDScript",
-"path": "res://scenes/characters/frog/frog_quest.gd"
-}, {
 "base": "PlayerItem",
 "class": "Haybale",
 "language": "GDScript",
@@ -169,7 +164,6 @@ _global_script_class_icons={
 "EmptyItem": "",
 "EmptyQuest": "",
 "FoxQuest": "",
-"FrogQuest": "",
 "Haybale": "",
 "HistoryRow": "",
 "Menu": "",

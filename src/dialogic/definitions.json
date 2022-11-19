@@ -4,36 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1668654821-648",
-			"name": "bunny_index",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668654833-787",
-			"name": "bunny_quest_complete",
-			"type": 0,
-			"value": "False"
-		},
-		{
-			"id": "1668654847-366",
-			"name": "cat_frog_index",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668654856-146",
-			"name": "cat_frog_quest_complete",
-			"type": 0,
-			"value": "False"
-		},
-		{
-			"id": "1668654902-918",
-			"name": "fox_index",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668654910-483",
 			"name": "fox_quest_complete",
 			"type": 0,
@@ -60,6 +30,48 @@
 		{
 			"id": "1668568200-648",
 			"name": "iguana_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668664212-787",
+			"name": "dog_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654902-918",
+			"name": "fox_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668664206-648",
+			"name": "dog_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668654847-366",
+			"name": "cat_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654821-648",
+			"name": "bunny_index",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668654833-787",
+			"name": "bunny_quest_complete",
+			"type": 0,
+			"value": "False"
+		},
+		{
+			"id": "1668654856-146",
+			"name": "cat_quest_complete",
 			"type": 0,
 			"value": "False"
 		}

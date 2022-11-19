@@ -7,7 +7,6 @@ func _init():
     self.icon_image_small = "res://assets/items/pudding/pudding-small.png";
     self.label = "Backpack";
     self.description = "I don't know how we're gonna build a castle now.";
-    self.quest_id = 1;
 
 func _ready():
     self.model = get_node("BackpackModel/12305_backpack_v2_l3");

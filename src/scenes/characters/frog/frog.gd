@@ -1,12 +1,11 @@
 extends "res://scenes/characters/character.gd";
 
 func _init():
-    self.npc = "frog";
+    self.npc = "cat";
     self.fetch_quest = {
-        start_signal = 'cat_frog_quest',
-        end_signal = 'cat_frog_complete',
+        start_signal = 'cat_quest',
+        end_signal = 'cat_complete',
         quest = CatQuest.new(),
-        item = 'wine bottle'    # Wine.new().label
        };
 
 func _ready():

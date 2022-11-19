@@ -1,0 +1,59 @@
+{
+	"events": [
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yep, that's what I smelled! Smells awful."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I wonder who dropped that."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Looks like this was used to cut the horse's leg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Also why was the knife in the garden?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The study room does look out to the garden..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668836095.json",
+		"name": "dog4"
+	}
+}

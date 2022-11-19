@@ -5,8 +5,7 @@ func _init():
     self.fetch_quest = {
         start_signal = 'bunny_quest',
         end_signal = 'bunny_complete',
-        quest = BunnyQuest.new(),
-        item = Backpack.new().label  # Bag.new().label
+        quest = BunnyQuest.new()
        };
 
 func _ready():
