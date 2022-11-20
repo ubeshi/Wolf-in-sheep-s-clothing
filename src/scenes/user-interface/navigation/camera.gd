@@ -23,7 +23,7 @@ func get_hover_selection() -> void:
 
     if result and result.collider.is_in_group("Characters"):
         result.collider.hover_focus();
-        
+
     var items = get_tree().get_nodes_in_group("Items");
     for item in items:
         item.hover_unfocus();

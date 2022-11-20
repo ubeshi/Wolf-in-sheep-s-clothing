@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/characters/frog/frog.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/characters/bunny/bunny.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/characters/cat/cat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/characters/fox/fox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/characters/dog/dog.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/walls/study/room.glb" type="PackedScene" id=6]
+[ext_resource path="res://scenes/characters/horse/horse.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/study-intro/study-intro.gd" type="Script" id=8]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Fade"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 4.92458, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 8 )
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35508, 0, 0 )
+
+[node name="Cat" type="Spatial" parent="Spatial"]
+transform = Transform( 0.387837, 0, 0.921728, 0, 1, 0, -0.921728, 0, 0.387837, -2.70088, 0, -3.78566 )
+
+[node name="CatModel" parent="Spatial/Cat" instance=ExtResource( 3 )]
+transform = Transform( 0.0300001, 0, 0, 0, -1.31134e-09, 0.03, 0, -0.0300001, -1.31134e-09, 0, 0, 0 )
+
+[node name="Frog" type="Spatial" parent="Spatial"]
+transform = Transform( 0.845159, 0, 0.534515, 0, 1, 0, -0.534515, 0, 0.845159, -1.85703, 0, -4.71443 )
+
+[node name="FrogModel" parent="Spatial/Frog" instance=ExtResource( 1 )]
+transform = Transform( 0.01, 0, -4.65661e-10, 0, 0.01, 0, 4.65661e-10, 0, 0.01, 2.38419e-07, 0, 0 )
+
+[node name="Dog" type="Spatial" parent="Spatial"]
+transform = Transform( 0.996663, 0, 0.0816253, 0, 1, 0, -0.0816253, 0, 0.996663, -0.805684, 0, -5.05724 )
+
+[node name="DogModel" parent="Spatial/Dog" instance=ExtResource( 5 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0 )
+
+[node name="Bunny" type="Spatial" parent="Spatial"]
+transform = Transform( 0.702551, 0, -0.711634, 0, 1, 0, 0.711634, 0, 0.702551, 0.20848, 0, -4.47847 )
+
+[node name="BunnyModel" parent="Spatial/Bunny" instance=ExtResource( 2 )]
+transform = Transform( 0.05, 2.42144e-08, 5.55112e-15, 0, -2.18557e-09, 0.05, 2.42144e-08, -0.05, -2.18557e-09, 0, 0, 0 )
+
+[node name="Fox" type="Spatial" parent="Spatial"]
+transform = Transform( 0.232087, 0, -0.972695, 0, 1, 0, 0.972695, 0, 0.232087, 1.23364, -0.0559931, -3.58928 )
+
+[node name="FoxModel" parent="Spatial/Fox" instance=ExtResource( 4 )]
+transform = Transform( 0.01, -6.0536e-09, -4.92661e-16, 0, -4.37114e-10, 0.01, -6.0536e-09, -0.01, -4.37114e-10, 0, 0, 0 )
+
+[node name="CameraFocus" type="Spatial" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.510246, 0.789329, -2.62643 )
+
+[node name="Camera4" type="Camera" parent="Spatial/CameraFocus"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.51996 )
+
+[node name="GroupFocus" type="Spatial" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.510246, 0.789329, -2.62643 )
+
+[node name="room" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00858307, -0.0839878, -0.0257876 )
+
+[node name="Camera1" type="Camera" parent="."]
+transform = Transform( -0.0945259, -0.703588, 0.704293, -0.329254, 0.689743, 0.644862, -0.939498, -0.170935, -0.296858, -1.07299, 2.78286, -0.177101 )
+
+[node name="Camera2" type="Camera" parent="."]
+transform = Transform( 0.434105, -0.563769, 0.70265, -0.103027, 0.743789, 0.660427, -0.894951, -0.359087, 0.264799, -2.28497, 1.09678, 1.53702 )
+
+[node name="Camera3" type="Camera" parent="."]
+transform = Transform( 0.784798, -0.0255687, 0.619224, -0.156921, 0.958392, 0.238454, -0.599556, -0.284307, 0.748132, -3.11914, 0.334919, 2.07384 )
+
+[node name="HorseModel" parent="." instance=ExtResource( 7 )]
+transform = Transform( -8.74228e-10, -0.01, 0, 0.02, -4.37114e-10, 0, 0, 0, 0.01, -3.00858, -0.0839878, 0.974212 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
+anims/Fade = SubResource( 1 )
