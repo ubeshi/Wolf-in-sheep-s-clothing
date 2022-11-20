@@ -8,7 +8,18 @@ var story_scene_one_scene;
 var study_intro_scene;
 
 func _ready() -> void:
-    start_introduction();
+    start_scene(Configuration.initial_scene);
+
+func start_scene(scene) -> void:
+    match (scene):
+        Configuration.Scene.INTRO:
+            start_introduction();
+        Configuration.Scene.STORY_SCENE_ONE:
+            start_story_scene_one();
+        Configuration.Scene.STUDY_INTRO:
+            start_study_intro();
+        Configuration.Scene.INVESTIGATION:
+            start_investigation();
 
 func start_introduction() -> void:
     introduction_scene = add_scene("res://scenes/introduction/introduction.tscn");
@@ -32,9 +43,9 @@ func start_study_intro() -> void:
 
 func end_study_intro() -> void:
     remove_child(study_intro_scene);
-    start_investigation_scene();
+    start_investigation();
 
-func start_investigation_scene() -> void:
+func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
