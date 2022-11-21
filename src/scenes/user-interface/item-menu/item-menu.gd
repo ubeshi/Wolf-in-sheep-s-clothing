@@ -12,9 +12,10 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/ItemsMenu";
 
 func _ready() -> void:
-    add_initial_items();
+    # add_placeholder_items();
+    pass;
 
-func add_initial_items() -> void:
+func add_placeholder_items() -> void:
     var bloody_knife = BloodyKnife.new();
     held_items.append(bloody_knife);
 
