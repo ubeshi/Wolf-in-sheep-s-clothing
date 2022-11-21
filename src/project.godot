@@ -184,8 +184,8 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
-Configuration="*res://autoloads/configuration.gd"
 Quests="*res://autoloads/quests.gd"
+Configuration="*res://autoloads/configuration.gd"
 
 [editor_plugins]
 
@@ -215,5 +215,4 @@ common/enable_pause_aware_picking=true
 
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
-environment/default_clear_color=Color( 0.301961, 0.301961, 0.301961, 1 )
 environment/default_environment="res://default_env.tres"
