@@ -11,13 +11,6 @@ func _init() -> void:
     self.close_menu_button_path = items_menu_body_node_path + "/ItemsMenuActions/ButtonCloseItemsMenu";
     self.menu_path = "CanvasLayer/ItemsMenu";
 
-func _ready() -> void:
-    add_initial_items();
-
-func add_initial_items() -> void:
-    var bloody_knife = BloodyKnife.new();
-    held_items.append(bloody_knife);
-
 func handle_menu_opened() -> void:
     if held_items.size() > 0:
         set_selected_item(held_items[0]);
