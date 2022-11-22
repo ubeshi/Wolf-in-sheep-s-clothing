@@ -1,9 +1,6 @@
 extends Node
 
 var current_scene = null;
-var introduction_path = "res://scenes/introduction/introduction.tscn";
-var study_intro_path = "res://scenes/study-intro/study-intro.tscn";
-var story_scene_one_path = "res://scenes/story-scene-one/story-scene-one.tscn";
 
 var introduction_scene;
 var story_scene_one_scene;
@@ -19,12 +16,12 @@ func _ready():
     var root = get_tree().root;
     current_scene = root.get_child(root.get_child_count() - 1);
 
-func go_to_scene(path):
-    call_deferred("_deferred_goto_scene", path);
+func go_to_scene(path: String):
+    call_deferred("deferred_go_to_scene", path);
 
-func deferred_go_to_scene(path):
+func deferred_go_to_scene(path: String):
     current_scene.free();
-    var s = ResourceLoader.load(path);
+    var s = load(path);
     current_scene = s.instance();
     get_tree().root.add_child(current_scene);
 
@@ -68,7 +65,6 @@ func start_investigation() -> void:
     # Add debug scene
     on_switch_room("foyer");
 
-
 func add_rooms() -> void:
     var room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
@@ -84,4 +80,3 @@ func on_switch_room(new_room_name) -> void:
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
-
