@@ -15,4 +15,3 @@ func remove_item(item: PlayerItem) -> void:
     for held in held_items:
         if held.label == item.label:
            held_items.erase(held);
-           print('item removed')

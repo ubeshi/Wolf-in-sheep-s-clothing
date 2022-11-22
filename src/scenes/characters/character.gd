@@ -29,7 +29,7 @@ func quest_status() -> void:
         if quest.label == fetch_quest.quest.label:
             for item in Inventory.held_items:
                 if item.label == fetch_quest.quest.item.label:
-                    Dialogic.set_variable(npc + '_quest_complete', true)
+                    Dialogic.set_variable(npc + '_quest_complete', true);
 
 func dialog_ended(_timeline_name) -> void:
     GameState.set_is_in_dialogue(false);

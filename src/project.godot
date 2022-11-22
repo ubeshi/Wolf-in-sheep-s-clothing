@@ -97,7 +97,7 @@ _global_script_classes=[ {
 "base": "PlayerQuest",
 "class": "EmptyQuest",
 "language": "GDScript",
-"path": "res://quests/empty-quest.gd"
+"path": "res://Quests/empty-quest.gd"
 }, {
 "base": "PlayerQuest",
 "class": "FoxQuest",
@@ -127,7 +127,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "PlayerQuest",
 "language": "GDScript",
-"path": "res://quests/quest.gd"
+"path": "res://Quests/Quest.gd"
 }, {
 "base": "PlayerItem",
 "class": "Pudding",
