@@ -149,6 +149,7 @@ config/icon="res://assets/icon.png"
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
 StoryController="*res://autoloads/story-controller.gd"
+Configuration="*res://autoloads/configuration.gd"
 
 [editor_plugins]
 

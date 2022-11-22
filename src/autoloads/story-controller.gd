@@ -14,7 +14,22 @@ var active_room = null;
 var active_room_name = "";
 
 func _ready():
-    start_introduction();
+    start_scene(Configuration.initial_scene);
+
+func start_scene(scene) -> void:
+    match (scene):
+        Configuration.Scene.INTRO:
+            start_introduction();
+        Configuration.Scene.STORY_SCENE_ONE:
+            start_story_scene_one();
+        Configuration.Scene.STUDY_INTRO:
+            start_study_intro();
+        Configuration.Scene.INVESTIGATION:
+            start_investigation();
+#        Configuration.Scene.CONCLUSION:
+#            start_conclusion();
+#        Configuration.Scene.WIN_LOSE:
+#            start_win_loss_screen();
 
 func add_scene(path: String) -> Node:
     var scene = load(path);
@@ -28,7 +43,7 @@ func start_introduction() -> void:
 
 func end_introduction() -> void:
     remove_child(introduction_scene);
-    start_story_scene_one();
+    start_scene(Configuration.Scene.STORY_SCENE_ONE);
 
 func start_story_scene_one() -> void:
     story_scene_one_scene = add_scene("res://scenes/story-scene-one/story-scene-one.tscn");
@@ -36,7 +51,7 @@ func start_story_scene_one() -> void:
 
 func end_story_scene_one() -> void:
     remove_child(story_scene_one_scene);
-    start_study_intro();
+    start_scene(Configuration.Scene.STUDY_INTRO);
 
 func start_study_intro() -> void:
     study_intro_scene = add_scene("res://scenes/study-intro/study-intro.tscn");
@@ -60,7 +75,7 @@ func end_investigation() -> void:
     remove_child(item_menu);
     remove_child(navigation);
     remove_child(room_navigation);
-    # start_conclusion();
+    # start_scene(Configuration.Scene.CONCLUSION);
 
 func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
@@ -84,7 +99,7 @@ func on_switch_room(new_room_name) -> void:
 
 # func end_conclusion() -> void:
     # remove_child(conclusion_scene);
-    # start_win_loss_screen();
+    # start_scene(Configuration.Scene.WIN_LOSE);
 
 # func start_win_loss_screen() -> void:
     # win_loss_screen = add_scene("res://scenes/win-loss/win-loss.tscn");
