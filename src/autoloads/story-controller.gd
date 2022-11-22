@@ -78,22 +78,18 @@ func on_switch_room(new_room_name) -> void:
         active_room = scene.instance();
         add_child(active_room);
 
-# TODO: Uncomment below function when conclusion scene is created
 # func start_conclusion() -> void:
     # conclusion_scene = add_scene("res://scenes/conclusion/conclusion.tscn");
     # conclusion_scene.connect("finished", self, "end_conclusion");
 
-# TODO: Uncomment below function when conclusion scene is created
 # func end_conclusion() -> void:
     # remove_child(conclusion_scene);
     # start_win_loss_screen();
 
-# TODO: Uncomment below function when win/loss scene is created
 # func start_win_loss_screen() -> void:
     # win_loss_screen = add_scene("res://scenes/win-loss/win-loss.tscn");
     # win_loss_screen.connect("finished", self, "end_conclusion");
 
-# TODO: Uncomment below function when win/loss scene is created
 # func end_win_loss_screen() -> void:
     # remove_child(win_loss_screen);
     # TBD
