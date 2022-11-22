@@ -9,6 +9,7 @@ func _init():
        };
 
 func _ready():
-    model = get_node("BunnyModel/bunnyMesh");
-    original_material = get_node("BunnyModel/bunnyMesh").get_surface_material(0).duplicate();
+    model = get_node("BunnyModel/1");
+    original_material = get_node("BunnyModel/1").get_surface_material(4).duplicate();
+    surface_material = 4;
 
