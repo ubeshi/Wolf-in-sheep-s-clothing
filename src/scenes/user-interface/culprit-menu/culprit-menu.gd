@@ -1,28 +1,23 @@
 extends Menu
 
-var pig = Pig.new();
 var bunny = Bunny.new();
 var cat = Cat.new();
 var dog = Dog.new();
 var fox = Fox.new();
 var frog = Frog.new();
 
-var pig_hints = CulpritHints.pig_hints;
 var bunny_hints = CulpritHints.bunny_hints;
 var cat_hints = CulpritHints.cat_hints;
 var dog_hints = CulpritHints.dog_hints;
 var fox_hints = CulpritHints.fox_hints;
 var frog_hints = CulpritHints.frog_hints;
 
-var characters = [pig, bunny, cat, dog, fox, frog];
+var characters = [bunny, cat, dog, fox, frog];
 
 var culprit_menu_body_node_path = "CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody";
 onready var culprit_menu_body_node = get_node(culprit_menu_body_node_path);
 
 func _init() -> void:
-    CulpritHints.add_pig_hint()
-    CulpritHints.add_pig_hint()
-    CulpritHints.add_pig_hint()
     self.open_menu_button_path = "CanvasLayer/UI/MarginContainer/ButtonOpenCulpritMenu";
     self.close_menu_button_path = culprit_menu_body_node_path + "/CulpritMenuActions/ButtonCloseCulpritMenu";
     self.menu_path = "CanvasLayer/CulpritMenu";
@@ -57,8 +52,6 @@ func set_selected_culprit(culprit: Culprit) -> void:
     var selectedItemDescriptionNode = selectedCulpritNode.get_node("CulpritText/CulpritDescription");
     var culprit_hints = [];
     match culprit:
-        pig:
-            culprit_hints = pig_hints;
         bunny:
             culprit_hints = bunny_hints;
         cat:

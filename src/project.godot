@@ -124,11 +124,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scenes/user-interface/menu.gd"
 }, {
-"base": "Culprit",
-"class": "Pig",
-"language": "GDScript",
-"path": "res://culprits/pig/pig.gd"
-}, {
 "base": "Node",
 "class": "PlayerItem",
 "language": "GDScript",
@@ -173,7 +168,6 @@ _global_script_class_icons={
 "Haybale": "",
 "HistoryRow": "",
 "Menu": "",
-"Pig": "",
 "PlayerItem": "",
 "Pudding": "",
 "TopHat": "",

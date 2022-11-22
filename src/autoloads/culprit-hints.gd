@@ -7,18 +7,11 @@ var dog_hints = [];
 var fox_hints = [];
 var frog_hints = [];
 
-var pig = Pig.new();
 var bunny = Bunny.new();
 var cat = Cat.new();
 var dog = Dog.new();
 var fox = Fox.new();
 var frog = Frog.new();
-
-# Pig
-func add_pig_hint() -> void:
-    var number_of_hints = pig_hints.size();
-    if number_of_hints < 3:
-        pig_hints.append(pig.hints[number_of_hints]);
 
 # Bunny
 func add_bunny_hint() -> void:
