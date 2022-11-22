@@ -6,24 +6,15 @@ var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
 
+var item_menu;
+var navigation;
+var room_navigation;
+
 var active_room = null;
 var active_room_name = "";
 
-func _init():
-    start_introduction();
-
 func _ready():
-    var root = get_tree().root;
-    current_scene = root.get_child(root.get_child_count() - 1);
-
-func go_to_scene(path: String):
-    call_deferred("deferred_go_to_scene", path);
-
-func deferred_go_to_scene(path: String):
-    current_scene.free();
-    var s = load(path);
-    current_scene = s.instance();
-    get_tree().root.add_child(current_scene);
+    start_introduction();
 
 func add_scene(path: String) -> Node:
     var scene = load(path);
@@ -59,14 +50,20 @@ func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
+    item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/navigation/navigation.tscn");
+    navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     # Add debug scene
     on_switch_room("foyer");
 
+func end_investigation() -> void:
+    remove_child(item_menu);
+    remove_child(navigation);
+    remove_child(room_navigation);
+    # start_conclusion();
+
 func add_rooms() -> void:
-    var room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
+    room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
     add_child(room_navigation);
 
@@ -80,3 +77,23 @@ func on_switch_room(new_room_name) -> void:
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
+
+# TODO: Uncomment below function when conclusion scene is created
+# func start_conclusion() -> void:
+    # conclusion_scene = add_scene("res://scenes/conclusion/conclusion.tscn");
+    # conclusion_scene.connect("finished", self, "end_conclusion");
+
+# TODO: Uncomment below function when conclusion scene is created
+# func end_conclusion() -> void:
+    # remove_child(conclusion_scene);
+    # start_win_loss_screen();
+
+# TODO: Uncomment below function when win/loss scene is created
+# func start_win_loss_screen() -> void:
+    # win_loss_screen = add_scene("res://scenes/win-loss/win-loss.tscn");
+    # win_loss_screen.connect("finished", self, "end_conclusion");
+
+# TODO: Uncomment below function when win/loss scene is created
+# func end_win_loss_screen() -> void:
+    # remove_child(win_loss_screen);
+    # TBD
