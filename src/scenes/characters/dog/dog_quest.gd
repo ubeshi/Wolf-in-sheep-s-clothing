@@ -7,6 +7,6 @@ func _init():
     self.description = "Dog misplaced his Top Hat in the Living Room. Help him find it.";
     self.item = TopHat.new();
 
-func KnifeQuest():
+func second_quest():
     self.description = "Dog smelled something strange in the Garden. Take a look around.";
     self.item = BloodyKnife.new();

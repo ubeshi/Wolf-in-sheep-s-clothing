@@ -5,7 +5,6 @@
 	"folders": {
 		"Characters": {
 			"files": [
-				"character-1667882986.json",
 				"character-1667882996.json",
 				"character-1668052581.json",
 				"character-1668057128.json",
@@ -13,8 +12,7 @@
 				"character-1668058298.json",
 				"character-1668057272.json",
 				"character-1668057277.json",
-				"character-1668057272.json",
-				"character-1668057277.json"
+				"character-1667882996.json"
 			],
 			"folders": {
 
@@ -50,9 +48,8 @@
 		"Themes": {
 			"files": [
 				"default-theme.cfg",
-				"theme-1667934674.cfg",
-				"theme-1668568196.cfg",
-				"theme-1668835742.cfg"
+				"theme-1668835742.cfg",
+				"theme-1668568196.cfg"
 			],
 			"folders": {
 
@@ -64,9 +61,6 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1667882917.json",
-				"timeline-1667883018.json",
-				"timeline-1668052610.json",
 				"timeline-1668058323.json",
 				"timeline-1668058325.json",
 				"timeline-1668057114.json",
@@ -76,19 +70,14 @@
 				"timeline-1668054629.json",
 				"timeline-1668054657.json",
 				"timeline-1668657968.json",
-				"timeline-1668568198.json",
-				"timeline-1668568182.json",
-				"timeline-1668057284.json",
-				"timeline-1668057459.json",
-				"timeline-1668057465.json",
-				"timeline-1668058598.json",
 				"timeline-1668835744.json",
 				"timeline-1668836095.json",
 				"timeline-1668058319.json",
 				"timeline-1668057284.json",
 				"timeline-1668057459.json",
-				"timeline-1668057465.json",
-				"timeline-1668058598.json"
+				"timeline-1668058598.json",
+				"timeline-1668052610.json",
+				"timeline-1668057465.json"
 			],
 			"folders": {
 

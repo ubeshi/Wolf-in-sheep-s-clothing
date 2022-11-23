@@ -17,14 +17,14 @@ func hover_unfocus() -> void:
 func interact() -> void:
     if (!GameState.is_in_interaction()):
         GameState.set_is_in_dialogue(true);
-        quest_status();
+        check_quest_status();
         var index = Dialogic.get_variable(npc + '_index');
         var dialog = Dialogic.start(npc + str(index));
         dialog.connect("timeline_end", self, "dialog_ended");
         dialog.connect("dialogic_signal", self, "dialogic_signal_event");
         add_child(dialog);
 
-func quest_status() -> void:
+func check_quest_status() -> void:
     for quest in Quests.quest_list:
         if quest.label == fetch_quest.quest.label:
             for item in Inventory.held_items:

@@ -8,7 +8,6 @@ var label: String;
 var description: String;
 var model: MeshInstance;
 var original_material: Material;
-var quest_id: int;
 
 func _ready() -> void:
     if (Inventory.is_item_picked_up(self)):

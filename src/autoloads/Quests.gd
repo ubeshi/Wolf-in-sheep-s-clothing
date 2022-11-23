@@ -10,6 +10,8 @@ func remove_quest(remove: PlayerQuest) -> void:
     for quest in quest_list:
         if quest.label == remove.label:
             quest_list.erase(quest);
-        if remove.label == DogQuest.new().label:
-            remove.KnifeQuest();
+            next_quest(remove);
 
+func next_quest(quest: PlayerQuest) -> void:
+    if quest.has_method("second_quest"):
+        quest.second_quest();
