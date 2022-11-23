@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://culprits/bunny/bunny.gd"
 }, {
+"base": "PlayerQuest",
+"class": "BunnyQuest",
+"language": "GDScript",
+"path": "res://scenes/characters/bunny/bunny-quest.gd"
+}, {
 "base": "PlayerItem",
 "class": "Cake",
 "language": "GDScript",
@@ -33,6 +38,11 @@ _global_script_classes=[ {
 "class": "Cat",
 "language": "GDScript",
 "path": "res://culprits/cat/cat.gd"
+}, {
+"base": "PlayerQuest",
+"class": "CatQuest",
+"language": "GDScript",
+"path": "res://scenes/characters/cat/cat_quest.gd"
 }, {
 "base": "Node",
 "class": "Culprit",
@@ -94,15 +104,30 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://culprits/dog/dog.gd"
 }, {
+"base": "PlayerQuest",
+"class": "DogQuest",
+"language": "GDScript",
+"path": "res://scenes/characters/dog/dog_quest.gd"
+}, {
 "base": "PlayerItem",
 "class": "EmptyItem",
 "language": "GDScript",
 "path": "res://items/empty-item/empty-item.gd"
 }, {
+"base": "PlayerQuest",
+"class": "EmptyQuest",
+"language": "GDScript",
+"path": "res://Quests/empty-quest.gd"
+}, {
 "base": "Culprit",
 "class": "Fox",
 "language": "GDScript",
 "path": "res://culprits/fox/fox.gd"
+}, {
+"base": "PlayerQuest",
+"class": "FoxQuest",
+"language": "GDScript",
+"path": "res://scenes/characters/fox/fox_quest.gd"
 }, {
 "base": "Culprit",
 "class": "Frog",
@@ -129,6 +154,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/item.gd"
 }, {
+"base": "Node",
+"class": "PlayerQuest",
+"language": "GDScript",
+"path": "res://Quests/Quest.gd"
+}, {
 "base": "PlayerItem",
 "class": "Pudding",
 "language": "GDScript",
@@ -148,8 +178,10 @@ _global_script_class_icons={
 "Backpack": "",
 "BloodyKnife": "",
 "Bunny": "",
+"BunnyQuest": "",
 "Cake": "",
 "Cat": "",
+"CatQuest": "",
 "Culprit": "",
 "DTS": "",
 "Dialogic": "",
@@ -162,13 +194,17 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "Dog": "",
+"DogQuest": "",
 "EmptyItem": "",
+"EmptyQuest": "",
 "Fox": "",
+"FoxQuest": "",
 "Frog": "",
 "Haybale": "",
 "HistoryRow": "",
 "Menu": "",
 "PlayerItem": "",
+"PlayerQuest": "",
 "Pudding": "",
 "TopHat": "",
 "WineBottle": ""
@@ -184,9 +220,10 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
+StoryController="*res://autoloads/story-controller.gd"
+Quests="*res://autoloads/quests.gd"
 Configuration="*res://autoloads/configuration.gd"
 CulpritHints="*res://autoloads/culprit-hints.gd"
-StoryController="*res://autoloads/story-controller.gd"
 
 [editor_plugins]
 
