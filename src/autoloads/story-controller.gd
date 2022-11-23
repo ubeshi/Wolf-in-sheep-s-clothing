@@ -5,6 +5,9 @@ var current_scene = null;
 var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
+var item_menu;
+var navigation;
+var win_lose_scene;
 
 var item_menu;
 var navigation;
