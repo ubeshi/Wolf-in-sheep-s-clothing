@@ -5,6 +5,7 @@ var current_scene = null;
 var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
+var win_loss_scene;
 
 var item_menu;
 var navigation;
@@ -28,8 +29,8 @@ func start_scene(scene) -> void:
             start_investigation();
 #        Configuration.Scene.CONCLUSION:
 #            start_conclusion();
-#        Configuration.Scene.WIN_LOSE:
-#            start_win_loss_screen();
+        Configuration.Scene.WIN_LOSE:
+            start_win_loss_scene();
 
 func add_scene(path: String) -> Node:
     var scene = load(path);
@@ -101,10 +102,10 @@ func on_switch_room(new_room_name) -> void:
     # remove_child(conclusion_scene);
     # start_scene(Configuration.Scene.WIN_LOSE);
 
-# func start_win_loss_screen() -> void:
-    # win_loss_screen = add_scene("res://scenes/win-loss/win-loss.tscn");
-    # win_loss_screen.connect("finished", self, "end_conclusion");
+func start_win_loss_scene() -> void:
+    win_loss_scene = add_scene("res://scenes/win-lose/win_lose.tscn");
+    win_loss_scene.connect("finished", self, "end_conclusion");
 
-# func end_win_loss_screen() -> void:
-    # remove_child(win_loss_screen);
+func end_win_loss_scene() -> void:
+    remove_child(win_loss_scene);
     # TBD
