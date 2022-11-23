@@ -4,65 +4,31 @@
 			"condition": "",
 			"definition": "1668664212-787",
 			"event_id": "dialogic_012",
-			"value": "1"
+			"value": "4"
 		},
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1668057128.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
-		},
-		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": true
-			},
-			"type": 0,
-			"z_index": 0
+			"condition": "",
+			"definition": "1668664206-648",
+			"event_id": "dialogic_012",
+			"value": "True"
 		},
 		{
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Who else did you see tonight?"
+			"text": "I found this bloody knife in the garden."
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, I also saw Bunny walking around when I came back from the garden"
+			"text": "Yep, that's what I smelled! Smells awful."
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Bunny was holding a bag... It looked pretty heavy. I almost thought Bunny would fall over!"
+			"text": "I wonder who dropped that."
 		},
 		{
 			"animation": "[Default]",
@@ -88,7 +54,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Strange... I wonder what Bunny was carrying in the bag."
+			"text": "Looks like this was used to cut the horse's leg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Also why was the knife in the garden?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The study room does look out to the garden..."
 		},
 		{
 			"animation": "[Default]",
@@ -111,12 +89,19 @@
 			"z_index": 0
 		},
 		{
-			"definition": "1668664212-787",
+			"definition": "1668664206-648",
 			"event_id": "dialogic_014",
-			"operation": "+",
+			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "1"
+			"set_value": "False"
+		},
+		{
+			"emit_signal": "dog_complete",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -124,7 +109,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1668057151.json",
-		"name": "dog1"
+		"file": "timeline-1668836095.json",
+		"name": "dog4"
 	}
 }
