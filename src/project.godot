@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://culprits/bunny/bunny.gd"
 }, {
+"base": "PlayerItem",
+"class": "Cake",
+"language": "GDScript",
+"path": "res://items/cake/cake.gd"
+}, {
 "base": "Culprit",
 "class": "Cat",
 "language": "GDScript",
@@ -33,11 +38,6 @@ _global_script_classes=[ {
 "class": "Culprit",
 "language": "GDScript",
 "path": "res://culprits/culprit.gd"
-}, {
-"base": "PlayerItem",
-"class": "Cake",
-"language": "GDScript",
-"path": "res://items/cake/cake.gd"
 }, {
 "base": "Reference",
 "class": "DTS",
@@ -148,9 +148,9 @@ _global_script_class_icons={
 "Backpack": "",
 "BloodyKnife": "",
 "Bunny": "",
+"Cake": "",
 "Cat": "",
 "Culprit": "",
-"Cake": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
@@ -184,9 +184,9 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
-StoryController="*res://autoloads/story-controller.gd"
-CulpritHints="*res://autoloads/culprit-hints.gd"
 Configuration="*res://autoloads/configuration.gd"
+CulpritHints="*res://autoloads/culprit-hints.gd"
+StoryController="*res://autoloads/story-controller.gd"
 
 [editor_plugins]
 
