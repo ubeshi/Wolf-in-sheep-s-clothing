@@ -5,7 +5,8 @@ enum Scene {
     STORY_SCENE_ONE,
     STUDY_INTRO,
     INVESTIGATION,
-    WIN_LOSE
+    CONCLUSION,
+    WIN_LOSE,
    }
 
 var initial_scene = Scene.INTRO;
