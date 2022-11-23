@@ -8,6 +8,7 @@ var study_intro_scene;
 var win_loss_scene;
 
 var item_menu;
+var culprit_menu;
 var navigation;
 var room_navigation;
 
@@ -68,12 +69,15 @@ func start_investigation() -> void:
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
+    culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
+    # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     # Add debug scene
     on_switch_room("foyer");
 
 func end_investigation() -> void:
     remove_child(item_menu);
+    remove_child(culprit_menu);
     remove_child(navigation);
     remove_child(room_navigation);
     # start_scene(Configuration.Scene.CONCLUSION);
