@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/characters/frog/frog.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/characters/bunny/bunny.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/characters/bunny/bunny2.glb" type="PackedScene" id=2]
 [ext_resource path="res://scenes/characters/cat/cat.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/characters/fox/fox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/characters/dog/dog.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/walls/study/room.glb" type="PackedScene" id=6]
+[ext_resource path="res://assets/walls/study/study.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/characters/horse/horse.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/study-intro/study-intro.gd" type="Script" id=8]
 
@@ -51,8 +51,8 @@ transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0 )
 [node name="Bunny" type="Spatial" parent="Spatial"]
 transform = Transform( 0.702551, 0, -0.711634, 0, 1, 0, 0.711634, 0, 0.702551, 0.20848, 0, -4.47847 )
 
-[node name="BunnyModel" parent="Spatial/Bunny" instance=ExtResource( 2 )]
-transform = Transform( 0.05, 2.42144e-08, 5.55112e-15, 0, -2.18557e-09, 0.05, 2.42144e-08, -0.05, -2.18557e-09, 0, 0, 0 )
+[node name="bunny2" parent="Spatial/Bunny" instance=ExtResource( 2 )]
+transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.802993, -0.344629, -0.588205 )
 
 [node name="Fox" type="Spatial" parent="Spatial"]
 transform = Transform( 0.232087, 0, -0.972695, 0, 1, 0, 0.972695, 0, 0.232087, 1.23364, -0.0559931, -3.58928 )
@@ -69,20 +69,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.51996 )
 [node name="GroupFocus" type="Spatial" parent="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.510246, 0.789329, -2.62643 )
 
-[node name="room" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00858307, -0.0839878, -0.0257876 )
-
 [node name="Camera1" type="Camera" parent="."]
-transform = Transform( -0.0945259, -0.703588, 0.704293, -0.329254, 0.689743, 0.644862, -0.939498, -0.170935, -0.296858, -1.07299, 2.78286, -0.177101 )
+transform = Transform( -0.0945259, -0.703588, 0.704293, -0.329254, 0.689743, 0.644862, -0.939498, -0.170935, -0.296858, 1.31538, 2.78286, -0.177101 )
 
 [node name="Camera2" type="Camera" parent="."]
-transform = Transform( 0.434105, -0.563769, 0.70265, -0.103027, 0.743789, 0.660427, -0.894951, -0.359087, 0.264799, -2.28497, 1.09678, 1.53702 )
+transform = Transform( 0.434105, -0.563769, 0.70265, -0.103027, 0.743789, 0.660427, -0.894951, -0.359087, 0.264799, 1.25375, 1.09678, 1.53702 )
 
 [node name="Camera3" type="Camera" parent="."]
-transform = Transform( 0.784798, -0.0255687, 0.619224, -0.156921, 0.958392, 0.238454, -0.599556, -0.284307, 0.748132, -3.11914, 0.334919, 2.07384 )
+transform = Transform( 0.714559, 0.230863, 0.660384, -0.360468, 0.930522, 0.0647387, -0.599556, -0.284307, 0.748132, 0.24123, 0.748188, 2.07384 )
 
 [node name="HorseModel" parent="." instance=ExtResource( 7 )]
-transform = Transform( -8.74228e-10, -0.01, 0, 0.02, -4.37114e-10, 0, 0, 0, 0.01, -3.00858, -0.0839878, 0.974212 )
+transform = Transform( -1.31134e-09, -0.02, 0, 0.03, -8.74228e-10, 0, 0, 0, 0.02, 0.57332, 0.0839417, -0.313398 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -91,3 +88,9 @@ color = Color( 0, 0, 0, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
 anims/Fade = SubResource( 1 )
+
+[node name="study" parent="." instance=ExtResource( 6 )]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.408453, 2.59975 )
+light_color = Color( 0.764706, 0.337255, 0.337255, 1 )
