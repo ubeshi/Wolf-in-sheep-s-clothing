@@ -19,6 +19,21 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/bloody-knife/bloody-knife.gd"
 }, {
+"base": "Culprit",
+"class": "Bunny",
+"language": "GDScript",
+"path": "res://culprits/bunny/bunny.gd"
+}, {
+"base": "Culprit",
+"class": "Cat",
+"language": "GDScript",
+"path": "res://culprits/cat/cat.gd"
+}, {
+"base": "Node",
+"class": "Culprit",
+"language": "GDScript",
+"path": "res://culprits/culprit.gd"
+}, {
 "base": "PlayerQuest",
 "class": "BunnyQuest",
 "language": "GDScript",
@@ -84,6 +99,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
+"base": "Culprit",
+"class": "Dog",
+"language": "GDScript",
+"path": "res://culprits/dog/dog.gd"
+}, {
 "base": "PlayerQuest",
 "class": "DogQuest",
 "language": "GDScript",
@@ -93,6 +113,16 @@ _global_script_classes=[ {
 "class": "EmptyItem",
 "language": "GDScript",
 "path": "res://items/empty-item/empty-item.gd"
+}, {
+"base": "Culprit",
+"class": "Fox",
+"language": "GDScript",
+"path": "res://culprits/fox/fox.gd"
+}, {
+"base": "Culprit",
+"class": "Frog",
+"language": "GDScript",
+"path": "res://culprits/frog/frog.gd"
 }, {
 "base": "PlayerQuest",
 "class": "EmptyQuest",
@@ -147,6 +177,9 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Backpack": "",
 "BloodyKnife": "",
+"Bunny": "",
+"Cat": "",
+"Culprit": "",
 "BunnyQuest": "",
 "Cake": "",
 "CatQuest": "",
@@ -161,9 +194,12 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "DogQuest": "",
+"Dog": "",
 "EmptyItem": "",
 "EmptyQuest": "",
 "FoxQuest": "",
+"Fox": "",
+"Frog": "",
 "Haybale": "",
 "HistoryRow": "",
 "Menu": "",
@@ -184,6 +220,7 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
+CulpritHints="*res://autoloads/culprit-hints.gd"
 Quests="*res://autoloads/quests.gd"
 Configuration="*res://autoloads/configuration.gd"
 
@@ -215,4 +252,5 @@ common/enable_pause_aware_picking=true
 
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.301961, 0.301961, 0.301961, 1 )
 environment/default_environment="res://default_env.tres"
