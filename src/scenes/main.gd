@@ -6,6 +6,10 @@ var active_room_name = "";
 var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
+var item_menu;
+var culprit_menu;
+var navigation;
+var win_lose_scene;
 
 func _ready() -> void:
     start_scene(Configuration.initial_scene);
@@ -20,6 +24,8 @@ func start_scene(scene) -> void:
             start_study_intro();
         Configuration.Scene.INVESTIGATION:
             start_investigation();
+        Configuration.Scene.WIN_LOSE:
+            start_win_lose();
 
 func start_introduction() -> void:
     introduction_scene = add_scene("res://scenes/introduction/introduction.tscn");
@@ -49,13 +55,15 @@ func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
+    item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
+    culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/navigation/navigation.tscn");
+    navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     # Add debug scene
     on_switch_room("foyer");
+
+    # add connection for start_win_lose();
 
 func add_scene(path: String) -> Node:
     var scene = load(path);
@@ -78,3 +86,9 @@ func on_switch_room(new_room_name) -> void:
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
+
+func start_win_lose() -> void:
+    remove_child(item_menu);
+    remove_child(culprit_menu);
+    remove_child(navigation);
+    win_lose_scene = add_scene('res://scenes/win-lose/win_lose.tscn');
