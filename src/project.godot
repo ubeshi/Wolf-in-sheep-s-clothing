@@ -19,6 +19,21 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/bloody-knife/bloody-knife.gd"
 }, {
+"base": "Culprit",
+"class": "Bunny",
+"language": "GDScript",
+"path": "res://culprits/bunny/bunny.gd"
+}, {
+"base": "Culprit",
+"class": "Cat",
+"language": "GDScript",
+"path": "res://culprits/cat/cat.gd"
+}, {
+"base": "Node",
+"class": "Culprit",
+"language": "GDScript",
+"path": "res://culprits/culprit.gd"
+}, {
 "base": "PlayerItem",
 "class": "Cake",
 "language": "GDScript",
@@ -74,10 +89,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
+"base": "Culprit",
+"class": "Dog",
+"language": "GDScript",
+"path": "res://culprits/dog/dog.gd"
+}, {
 "base": "PlayerItem",
 "class": "EmptyItem",
 "language": "GDScript",
 "path": "res://items/empty-item/empty-item.gd"
+}, {
+"base": "Culprit",
+"class": "Fox",
+"language": "GDScript",
+"path": "res://culprits/fox/fox.gd"
+}, {
+"base": "Culprit",
+"class": "Frog",
+"language": "GDScript",
+"path": "res://culprits/frog/frog.gd"
 }, {
 "base": "PlayerItem",
 "class": "Haybale",
@@ -117,6 +147,9 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Backpack": "",
 "BloodyKnife": "",
+"Bunny": "",
+"Cat": "",
+"Culprit": "",
 "Cake": "",
 "DTS": "",
 "Dialogic": "",
@@ -128,7 +161,10 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
+"Dog": "",
 "EmptyItem": "",
+"Fox": "",
+"Frog": "",
 "Haybale": "",
 "HistoryRow": "",
 "Menu": "",
@@ -148,6 +184,7 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
+CulpritHints="*res://autoloads/culprit-hints.gd"
 Configuration="*res://autoloads/configuration.gd"
 
 [editor_plugins]
