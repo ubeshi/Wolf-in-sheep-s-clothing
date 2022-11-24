@@ -14,4 +14,3 @@ func _ready() -> void:
 
 func end_investigation() -> void:
     StoryController.end_investigation();
-    pass;
