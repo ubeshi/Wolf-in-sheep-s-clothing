@@ -117,7 +117,7 @@ _global_script_classes=[ {
 "base": "PlayerQuest",
 "class": "EmptyQuest",
 "language": "GDScript",
-"path": "res://Quests/empty-quest.gd"
+"path": "res://quests/empty-quest.gd"
 }, {
 "base": "Culprit",
 "class": "Fox",
@@ -157,7 +157,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "PlayerQuest",
 "language": "GDScript",
-"path": "res://Quests/Quest.gd"
+"path": "res://quests/quest.gd"
 }, {
 "base": "PlayerItem",
 "class": "Pudding",
@@ -213,7 +213,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Wolf in sheep's clothing"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/camera-effects.tscn"
 config/icon="res://assets/icon.png"
 
 [autoload]
