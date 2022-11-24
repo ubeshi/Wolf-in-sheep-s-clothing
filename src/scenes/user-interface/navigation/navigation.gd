@@ -13,8 +13,8 @@ func _process(_delta):
     camera_pivot.rotation.y = lerp(camera_pivot.rotation.y, camera_rotation.y, lerp_speed);
 
 func initialize_arrow_menu_buttons() -> void:
-    var left_button = get_node("ArrowContainer/LeftArrow");
-    var right_button = get_node("ArrowContainer/RightArrow");
+    var left_button = get_node("CanvasLayer/ArrowContainer/LeftArrow");
+    var right_button = get_node("CanvasLayer/ArrowContainer/RightArrow");
     left_button.connect("pressed", self, "handle_left_navigation_button_pressed");
     right_button.connect("pressed", self, "handle_right_navigation_button_pressed");
 
