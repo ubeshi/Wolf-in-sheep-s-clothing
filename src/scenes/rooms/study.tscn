@@ -26,13 +26,14 @@ transform = Transform( -8.74228e-10, -0.01, 0, 0.02, -4.37114e-10, 0, 0, 0, 0.01
 shape = SubResource( 8 )
 
 [node name="Backpack" type="StaticBody" parent="." groups=["Items"]]
-transform = Transform( 0.0250665, 0, 0.00549417, 0, 0.03, 0, -0.0164825, 0, 0.00835548, -1.75921, 0.20557, 2.533 )
+transform = Transform( -0.0042322, 0, 0.00989999, 0, 0.03, 0, -0.0297, 0, -0.00141075, -3.36734, 0.00874867, 1.80109 )
 script = ExtResource( 4 )
 
 [node name="BackpackModel" parent="Backpack" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="BackpackCollision" type="CollisionShape" parent="Backpack"]
+transform = Transform( 1, 0, 3.72529e-09, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 shape = SubResource( 9 )
 
 [node name="study" parent="." instance=ExtResource( 2 )]
