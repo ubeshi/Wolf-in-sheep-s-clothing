@@ -2,7 +2,7 @@
 
 [ext_resource path="res://items/top-hat/top-hat.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/top-hat/top-hat.gd" type="Script" id=2]
-[ext_resource path="res://assets/walls/living-room/room.glb" type="PackedScene" id=3]
+[ext_resource path="res://assets/walls/living-room/living_room.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/characters/fox/fox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/characters/fox/fox.gd" type="Script" id=7]
 
@@ -14,14 +14,8 @@ points = PoolVector3Array( -15.1375, 0.3703, 49.7413, 15.1344, 0.3703, 49.7413, 
 
 [node name="Spatial" type="Spatial"]
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( -4.37114e-08, -0.866025, 0.5, 0, 0.5, 0.866025, -1, 3.78552e-08, -2.18557e-08, 2, 3.75474, 0 )
-light_energy = 0.3
-light_indirect_energy = 5.0
-light_bake_mode = 0
-
 [node name="TopHat" type="StaticBody" parent="." groups=["Items"]]
-transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 3, 0, 1 )
+transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 3, 0.658208, 3.6369 )
 script = ExtResource( 2 )
 
 [node name="TopHatModel" parent="TopHat" instance=ExtResource( 1 )]
@@ -31,7 +25,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.086, 0 )
 shape = SubResource( 2 )
 
 [node name="Fox" type="StaticBody" parent="." groups=["Characters"]]
-transform = Transform( 0.00707107, 0.00707107, 3.09086e-10, 0, -4.37114e-10, 0.01, 0.00707107, -0.00707107, -3.09086e-10, -1, 0, -1 )
+transform = Transform( 0.00707107, 0.00707107, 3.09086e-10, 0, -4.37114e-10, 0.01, 0.00707107, -0.00707107, -3.09086e-10, -1, 0.119329, -1 )
 script = ExtResource( 7 )
 
 [node name="FoxModel" parent="Fox" instance=ExtResource( 6 )]
@@ -40,5 +34,4 @@ script = ExtResource( 7 )
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 1 )
 
-[node name="room" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.086, 0 )
+[node name="living_room" parent="." instance=ExtResource( 3 )]
