@@ -69,6 +69,8 @@ func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
+    add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
+    # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");

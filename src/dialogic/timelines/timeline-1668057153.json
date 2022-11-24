@@ -1,6 +1,18 @@
 {
 	"events": [
 		{
+			"condition": "",
+			"definition": "1668664212-787",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"condition": "",
+			"definition": "1668664206-648",
+			"event_id": "dialogic_012",
+			"value": "True"
+		},
+		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -41,59 +53,63 @@
 			"z_index": 0
 		},
 		{
-			"character": "character-1668057128.json",
+			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yep, that's what I smelled! Smells awful."
+			"text": "Heres your Top Hat back."
+		},
+		{
+			"emit_signal": "dog_complete",
+			"event_id": "dialogic_040"
+		},
+		{
+			"definition": "1668664206-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "False"
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I wonder who dropped that."
+			"text": "Thanks Wolf. I'm starting to think you didnt kill Horse."
 		},
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thats because I didnt!"
+		},
+		{
 			"character": "character-1668057128.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Looks like this was used to cut the horse's leg"
+			"text": "By the way, I smelled something strange in the garden early.\nMaybe you should take a look around."
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Also why was the knife in the garden?"
+			"emit_signal": "dog_quest",
+			"event_id": "dialogic_040"
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "The study room does look out to the garden..."
+			"definition": "1668664212-787",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1668057153.json",
-		"name": "dog2"
+		"name": "dog3"
 	}
 }
