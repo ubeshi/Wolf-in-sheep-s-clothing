@@ -12,12 +12,6 @@ func _init() -> void:
 func _ready() -> void:
     end_investigation_button_node.connect("pressed", self, "end_investigation");
 
-func handle_menu_opened() -> void:
-    pass;
-
-func handle_menu_closed() -> void:
-    pass;
-
 func end_investigation() -> void:
     StoryController.end_investigation();
     pass;

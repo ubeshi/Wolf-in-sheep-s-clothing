@@ -70,6 +70,8 @@ func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
+    end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
+    # warning-ignore:return_value_discarded
     quest_menu = add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
@@ -77,8 +79,6 @@ func start_investigation() -> void:
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
-    # warning-ignore:return_value_discarded
-    end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
     # Add debug scene
     on_switch_room("foyer");
 
@@ -94,8 +94,7 @@ func end_investigation() -> void:
 func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
-    # add_child(room_navigation);
-    add_scene(room_navigation);
+    add_child(room_navigation);
 
 func on_switch_room(new_room_name) -> void:
     if new_room_name != active_room_name:
