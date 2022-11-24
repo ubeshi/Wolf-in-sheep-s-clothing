@@ -8,6 +8,7 @@ var study_intro_scene;
 var conclusion_scene;
 var win_loss_scene;
 
+var quest_menu;
 var item_menu;
 var culprit_menu;
 var navigation;
@@ -69,7 +70,7 @@ func start_investigation() -> void:
     # Add UI
     add_rooms();
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
+    quest_menu = add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
@@ -82,6 +83,7 @@ func start_investigation() -> void:
     on_switch_room("foyer");
 
 func end_investigation() -> void:
+    remove_child(quest_menu);
     remove_child(item_menu);
     remove_child(culprit_menu);
     remove_child(navigation);
@@ -92,7 +94,8 @@ func end_investigation() -> void:
 func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
-    add_child(room_navigation);
+    # add_child(room_navigation);
+    add_scene(room_navigation);
 
 func on_switch_room(new_room_name) -> void:
     if new_room_name != active_room_name:
