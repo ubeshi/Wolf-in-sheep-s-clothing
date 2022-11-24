@@ -1,6 +1,6 @@
 extends Menu
 
-const rooms = ["Study", "Foyer", "Kitchen", "LivingRoom", "Cellar", "Garden"];
+const rooms = ["Study", "Kitchen", "LivingRoom", "Cellar", "Garden"];
 
 var active_room = null setget set_active_room;
 
@@ -15,7 +15,7 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/RoomsMenu";
 
 func _ready() -> void:
-    set_active_room("Foyer");
+    set_active_room("Study");
 
 func set_active_room(value) -> void:
     active_room = value;
