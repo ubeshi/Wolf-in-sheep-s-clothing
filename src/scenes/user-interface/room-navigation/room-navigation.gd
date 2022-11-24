@@ -1,6 +1,6 @@
 extends Menu
 
-const rooms = ["Study", "Foyer", "Kitchen", "LivingRoom", "Cellar", "Garden"];
+const rooms = ["Study", "Kitchen", "LivingRoom", "Cellar", "Garden"];
 
 var active_room = null setget set_active_room;
 
