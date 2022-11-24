@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/user-interface/end-investigation-menu/end-investigation-menu.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UI"]
+anchor_left = 0.02
+anchor_top = 1.0
+anchor_right = 0.15
+anchor_bottom = 1.0
+margin_left = 0.127991
+margin_top = -40.0
+margin_right = -1.42401
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ButtonEndInvestigationOuter" type="Button" parent="CanvasLayer/UI/MarginContainer"]
+margin_right = 131.0
+margin_bottom = 20.0
+text = "End Investigation"
+
+[node name="EndInvestigationMenu" type="Control" parent="CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/EndInvestigationMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/EndInvestigationMenu/MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -60.0
+margin_right = 250.0
+margin_bottom = 60.0
+
+[node name="EndInvestigationMenuBody" type="VBoxContainer" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer"]
+margin_right = 500.0
+margin_bottom = 120.0
+
+[node name="Label" type="Label" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer/EndInvestigationMenuBody"]
+margin_right = 500.0
+margin_bottom = 14.0
+text = "Are you ready to choose the killer? Make sure you're ready. If you're wrong,"
+
+[node name="Label2" type="Label" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer/EndInvestigationMenuBody"]
+margin_top = 18.0
+margin_right = 500.0
+margin_bottom = 32.0
+text = "you're going to prison baby."
+
+[node name="ButtonEndInvestigation" type="Button" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer/EndInvestigationMenuBody"]
+margin_top = 36.0
+margin_right = 500.0
+margin_bottom = 56.0
+text = "End Investigation"
+
+[node name="ButtonContinueInvestigation" type="Button" parent="CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer/EndInvestigationMenuBody"]
+margin_top = 60.0
+margin_right = 500.0
+margin_bottom = 80.0
+text = "Continue Investigation"

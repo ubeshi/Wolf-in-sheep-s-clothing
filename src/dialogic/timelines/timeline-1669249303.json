@@ -1,0 +1,100 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Who killer?"
+		},
+		{
+			"choice": "Dog",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1669249567-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Dog"
+		},
+		{
+			"choice": "Bunny",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1669249567-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Bunny"
+		},
+		{
+			"choice": "Fox",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1669249567-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Fox"
+		},
+		{
+			"choice": "Cat",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1669249567-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Cat"
+		},
+		{
+			"choice": "Frog",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1669249567-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Frog"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"emit_signal": "timeline_end",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669249303.json",
+		"name": "conclusion0"
+	}
+}

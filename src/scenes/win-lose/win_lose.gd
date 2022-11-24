@@ -1,6 +1,6 @@
 extends Spatial
 
-var win = false;
+var win = WinLossFlag.get_flag();
 
 func _ready() -> void:
     if (win == true):

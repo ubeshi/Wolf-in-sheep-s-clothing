@@ -187,6 +187,7 @@ GameState="*res://autoloads/game-state.gd"
 StoryController="*res://autoloads/story-controller.gd"
 CulpritHints="*res://autoloads/culprit-hints.gd"
 Configuration="*res://autoloads/configuration.gd"
+WinLossFlag="*res://autoloads/win-loss-flag.gd"
 
 [editor_plugins]
 
