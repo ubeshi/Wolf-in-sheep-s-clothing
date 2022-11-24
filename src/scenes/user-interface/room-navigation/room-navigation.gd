@@ -15,7 +15,7 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/RoomsMenu";
 
 func _ready() -> void:
-    set_active_room("Foyer");
+    set_active_room("Study");
 
 func set_active_room(value) -> void:
     active_room = value;
