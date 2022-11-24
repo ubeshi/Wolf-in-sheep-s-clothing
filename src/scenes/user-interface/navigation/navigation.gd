@@ -3,10 +3,12 @@ extends Control
 var camera_pivot;
 var camera_rotation;
 export var lerp_speed = 0.05;
+var initial_camera_rotation;
 
 func _ready() -> void:
     camera_pivot = get_node("CameraPivot");
     camera_rotation = camera_pivot.rotation;
+    initial_camera_rotation = camera_pivot.rotation;
     initialize_arrow_menu_buttons();
 
 func _process(_delta):
@@ -32,3 +34,7 @@ func _on_LeftButton_pressed() -> void:
 
 func _on_RightButton_pressed() -> void:
     set_camera_position(1);
+
+func reset_camera_rotation() -> void:
+    camera_pivot.rotation.y = initial_camera_rotation.y;
+    camera_rotation.y = initial_camera_rotation.y;
