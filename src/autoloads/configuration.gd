@@ -9,4 +9,4 @@ enum Scene {
     WIN_LOSE,
    }
 
-var initial_scene = Scene.INTRO;
+var initial_scene = Scene.INVESTIGATION;

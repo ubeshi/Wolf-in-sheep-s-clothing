@@ -2,6 +2,7 @@ extends Node
 
 var current_scene = null;
 
+var camera_effects_scene;
 var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
@@ -16,6 +17,7 @@ var active_room = null;
 var active_room_name = "";
 
 func _ready():
+    camera_effects_scene = add_scene("res://scenes/camera-effects.tscn");
     start_scene(Configuration.initial_scene);
 
 func start_scene(scene) -> void:
@@ -60,12 +62,12 @@ func start_study_intro() -> void:
     study_intro_scene.connect("finished", self, "end_study_intro");
 
 func end_study_intro() -> void:
+    yield(camera_effects_scene.fade_to_black(), "completed");
     remove_child(study_intro_scene);
     start_investigation();
 
 func start_investigation() -> void:
-    # Add UI
-    add_rooms();
+    on_switch_room("study");
     # warning-ignore:return_value_discarded
     add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     # warning-ignore:return_value_discarded
@@ -74,8 +76,8 @@ func start_investigation() -> void:
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
-    # Add debug scene
-    on_switch_room("foyer");
+    add_rooms();
+    yield(camera_effects_scene.fade_from_black(), "completed");
 
 func end_investigation() -> void:
     remove_child(item_menu);
