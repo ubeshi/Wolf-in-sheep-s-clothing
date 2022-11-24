@@ -67,7 +67,6 @@ func end_study_intro() -> void:
     start_investigation();
 
 func start_investigation() -> void:
-    on_switch_room("study");
     # warning-ignore:return_value_discarded
     add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     # warning-ignore:return_value_discarded
@@ -76,6 +75,7 @@ func start_investigation() -> void:
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
+    on_switch_room("study");
     add_rooms();
     yield(camera_effects_scene.fade_from_black(), "completed");
 
