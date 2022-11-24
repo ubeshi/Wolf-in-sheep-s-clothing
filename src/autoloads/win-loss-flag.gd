@@ -1,18 +1,16 @@
 extends Node
 
-var WIN = true;
-var LOSS = false;
 var flag;
 
 func set_flag(option: bool) -> void:
     if (option):
-        flag = WIN;
+        flag = true;
     else:
-        flag = LOSS;
+        flag = false;
 
 func get_flag() -> bool:
     if (typeof(flag) == TYPE_BOOL):
         return flag;
     else:
         # fallback
-        return LOSS;
+        return false;

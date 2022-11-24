@@ -11,5 +11,4 @@ func end_conclusion(_arg) -> void:
     var culprit_choice = Dialogic.get_variable("CulpritChoice");
     if (culprit_choice == "Bunny"):
         WinLossFlag.set_flag(true);
-        print(WinLossFlag.get_flag());
     emit_signal("finished");
