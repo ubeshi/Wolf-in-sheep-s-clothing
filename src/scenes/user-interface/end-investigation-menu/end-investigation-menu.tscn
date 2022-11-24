@@ -22,9 +22,6 @@ margin_left = 20.0
 margin_top = -46.0
 margin_right = 142.0
 margin_bottom = -26.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="ButtonEndInvestigationOuter" type="Button" parent="CanvasLayer/UI/MarginContainer"]
 margin_right = 122.0
