@@ -44,9 +44,11 @@ transform = Transform( 1, 0, 0, 0, 0.8517, 0.524031, 0, -0.524031, 0.8517, 0, 5.
 light_color = Color( 0.764706, 0.337255, 0.337255, 1 )
 light_energy = 0.413
 
-[node name="broken_statue" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.172814, 0, -0.245225, 0, 0.3, 0, 0.245225, 0, 0.172814, -1.72392, 0, 3.20023 )
-
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57689, 0.267943, 3.08202 )
 light_color = Color( 0.737255, 0.588235, 0.145098, 1 )
+light_energy = 4.334
+omni_range = 1.36
+
+[node name="broken_statue" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.199483, 0, -0.224068, 0, 0.3, 0, 0.224068, 0, 0.199483, -1.80305, 0, 3.17189 )
