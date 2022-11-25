@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/characters/cat/cat.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/characters/cat/cat.gd" type="Script" id=2]
 [ext_resource path="res://assets/walls/cellar/cellar.tscn" type="PackedScene" id=3]
-[ext_resource path="res://items/haybale/haybale.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/items/haybale/haybale.glb" type="PackedScene" id=4]
 [ext_resource path="res://items/haybale/haybale.gd" type="Script" id=5]
 [ext_resource path="res://scenes/characters/frog/frog.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/characters/frog/frog.gd" type="Script" id=7]
@@ -39,13 +39,13 @@ transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, -0.0
 shape = SubResource( 9 )
 
 [node name="Haybale" type="StaticBody" parent="." groups=["Items"]]
-transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 3, 0, -6 )
+transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 2.28545, 0.463645, -6.03447 )
 script = ExtResource( 5 )
-
-[node name="HaybaleModel" parent="Haybale" instance=ExtResource( 4 )]
 
 [node name="HaybaleCollision" type="CollisionShape" parent="Haybale"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 10 )
+
+[node name="HaybaleModel" parent="Haybale" instance=ExtResource( 4 )]
 
 [node name="cellar" parent="." instance=ExtResource( 3 )]
