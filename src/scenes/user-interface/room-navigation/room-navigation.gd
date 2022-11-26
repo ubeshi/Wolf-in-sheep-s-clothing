@@ -30,15 +30,11 @@ func set_active_room(value) -> void:
 func handle_menu_opened() -> void:
     emit_signal("opened_menu", "room_navigation");
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
-    rooms_menu_node.set_physics_process(true);
-    rooms_menu_node.set_process_input(true);
     rooms_menu_node.visible = true;
 
 func handle_menu_closed() -> void:
     emit_signal("closed_menu", "room_navigation");
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
-    rooms_menu_node.set_physics_process(false);
-    rooms_menu_node.set_process_input(false);
     rooms_menu_node.visible = false;
 
 func _on_ButtonGardenMenu_pressed():
