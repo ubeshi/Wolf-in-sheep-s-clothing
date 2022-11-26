@@ -114,24 +114,20 @@ func add_UI(menu) -> void:
 func start_investigation() -> void:
     # warning-ignore:return_value_discarded
     end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
-    end_investigation_menu.connect("opened_menu", self, "remove_UI");
-    end_investigation_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     quest_menu = add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
-    quest_menu.connect("opened_menu", self, "remove_UI");
-    quest_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
-    item_menu.connect("opened_menu", self, "remove_UI");
-    item_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
-    culprit_menu.connect("opened_menu", self, "remove_UI");
-    culprit_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     on_switch_room("study");
     add_rooms();
+    var ui_menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    for ui_menu in ui_menus:
+        ui_menu.connect("opened_menu", self, "remove_UI");
+        ui_menu.connect("closed_menu", self, "add_UI");
     yield(camera_effects_scene.fade_from_black(), "completed");
 
 func end_investigation() -> void:
@@ -147,8 +143,6 @@ func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
     add_child(room_navigation);
-    room_navigation.connect("opened_menu", self, "remove_UI");
-    room_navigation.connect("closed_menu", self, "add_UI");
 
 func on_switch_room(new_room_name) -> void:
     if new_room_name != active_room_name:
