@@ -69,15 +69,64 @@ func end_study_intro() -> void:
     remove_child(study_intro_scene);
     start_investigation();
 
+func remove_UI(menu) -> void:
+    var current_menu = null;
+    match menu:
+        "culprit_menu":
+            current_menu = culprit_menu;
+        "end_investigation_menu":
+            current_menu = end_investigation_menu;
+        "item_menu":
+            current_menu = item_menu;
+        "navigation":
+            current_menu = navigation;
+        "quest_menu":
+            current_menu = quest_menu;
+        "room_navigation":
+            current_menu = room_navigation;
+
+    var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
+    var current_menu_index = menus.find(current_menu);
+    menus.remove(current_menu_index);
+    for menu_item in menus:
+        remove_child(menu_item);
+
+func add_UI(menu) -> void:
+    var current_menu = null;
+    match menu:
+        "culprit_menu":
+            current_menu = culprit_menu;
+        "end_investigation_menu":
+            current_menu = end_investigation_menu;
+        "item_menu":
+            current_menu = item_menu;
+        "quest_menu":
+            current_menu = quest_menu;
+        "room_navigation":
+            current_menu = room_navigation;
+
+    var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
+    var current_menu_index = menus.find(current_menu);
+    menus.remove(current_menu_index);
+    for menu_item in menus:
+        add_child(menu_item);
+
 func start_investigation() -> void:
-    # warning-ignore:return_value_discarded
     end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
+    end_investigation_menu.connect("opened_menu", self, "remove_UI");
+    end_investigation_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     quest_menu = add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
+    quest_menu.connect("opened_menu", self, "remove_UI");
+    quest_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
+    item_menu.connect("opened_menu", self, "remove_UI");
+    item_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
+    culprit_menu.connect("opened_menu", self, "remove_UI");
+    culprit_menu.connect("closed_menu", self, "add_UI");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     on_switch_room("study");
@@ -97,6 +146,8 @@ func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
     room_navigation.connect("switch_room", self, "on_switch_room");
     add_child(room_navigation);
+    room_navigation.connect("opened_menu", self, "remove_UI");
+    room_navigation.connect("closed_menu", self, "add_UI");
 
 func on_switch_room(new_room_name) -> void:
     if new_room_name != active_room_name:

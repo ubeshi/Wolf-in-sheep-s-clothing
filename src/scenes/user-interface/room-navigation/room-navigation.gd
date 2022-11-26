@@ -1,5 +1,8 @@
 extends Menu
 
+signal opened_menu(menu);
+signal closed_menu(menu);
+
 const rooms = ["Study", "Kitchen", "LivingRoom", "Cellar", "Garden"];
 
 var active_room = null setget set_active_room;
@@ -28,12 +31,14 @@ func set_active_room(value) -> void:
                 button.disabled = false;
 
 func handle_menu_opened() -> void:
+    emit_signal("opened_menu", "room_navigation");
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
     rooms_menu_node.set_physics_process(true);
     rooms_menu_node.set_process_input(true);
     rooms_menu_node.visible = true;
 
 func handle_menu_closed() -> void:
+    emit_signal("closed_menu", "room_navigation");
     var rooms_menu_node = get_node("CanvasLayer/RoomsMenu");
     rooms_menu_node.set_physics_process(false);
     rooms_menu_node.set_process_input(false);
