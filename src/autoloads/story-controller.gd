@@ -112,6 +112,7 @@ func add_UI(menu) -> void:
         add_child(menu_item);
 
 func start_investigation() -> void:
+    # warning-ignore:return_value_discarded
     end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
     end_investigation_menu.connect("opened_menu", self, "remove_UI");
     end_investigation_menu.connect("closed_menu", self, "add_UI");

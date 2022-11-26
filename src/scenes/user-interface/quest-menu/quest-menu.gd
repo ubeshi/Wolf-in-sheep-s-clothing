@@ -1,8 +1,5 @@
 extends Menu
 
-signal opened_menu(menu);
-signal closed_menu(menu);
-
 var quest_list = Quests.quest_list;
 var empty_quest = EmptyQuest.new();
 

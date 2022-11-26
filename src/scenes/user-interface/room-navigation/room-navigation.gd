@@ -1,8 +1,5 @@
 extends Menu
 
-signal opened_menu(menu);
-signal closed_menu(menu);
-
 const rooms = ["Study", "Kitchen", "LivingRoom", "Cellar", "Garden"];
 
 var active_room = null setget set_active_room;

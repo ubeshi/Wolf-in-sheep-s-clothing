@@ -1,8 +1,5 @@
 extends Menu
 
-signal opened_menu(menu);
-signal closed_menu(menu);
-
 var held_items = Inventory.held_items;
 var empty_item = EmptyItem.new();
 

@@ -1,8 +1,5 @@
 extends Menu
 
-signal opened_menu(menu);
-signal closed_menu(menu);
-
 var end_investigation_menu_body_node_path = "CanvasLayer/EndInvestigationMenu/MarginContainer/ColorRect/MarginContainer/EndInvestigationMenuBody";
 var end_investigation_button_path = end_investigation_menu_body_node_path + "/ButtonEndInvestigation";
 onready var end_investigation_button_node = get_node(end_investigation_button_path);

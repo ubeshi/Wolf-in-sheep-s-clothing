@@ -1,8 +1,5 @@
 extends Menu
 
-signal opened_menu(menu);
-signal closed_menu(menu);
-
 var bunny = Bunny.new();
 var cat = Cat.new();
 var dog = Dog.new();
