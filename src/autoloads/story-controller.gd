@@ -6,12 +6,15 @@ var camera_effects_scene;
 var introduction_scene;
 var story_scene_one_scene;
 var study_intro_scene;
+var conclusion_scene;
 var win_loss_scene;
 
+var quest_menu;
 var item_menu;
 var culprit_menu;
 var navigation;
 var room_navigation;
+var end_investigation_menu;
 
 var active_room = null;
 var active_room_name = "";
@@ -30,8 +33,8 @@ func start_scene(scene) -> void:
             start_study_intro();
         Configuration.Scene.INVESTIGATION:
             start_investigation();
-#        Configuration.Scene.CONCLUSION:
-#            start_conclusion();
+        Configuration.Scene.CONCLUSION:
+            start_conclusion();
         Configuration.Scene.WIN_LOSE:
             start_win_loss_scene();
 
@@ -68,7 +71,9 @@ func end_study_intro() -> void:
 
 func start_investigation() -> void:
     # warning-ignore:return_value_discarded
-    add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
+    end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
+    # warning-ignore:return_value_discarded
+    quest_menu = add_scene("res://scenes/user-interface/quest-menu/quest-menu.tscn");
     # warning-ignore:return_value_discarded
     item_menu = add_scene("res://scenes/user-interface/item-menu/item-menu.tscn");
     # warning-ignore:return_value_discarded
@@ -80,11 +85,13 @@ func start_investigation() -> void:
     yield(camera_effects_scene.fade_from_black(), "completed");
 
 func end_investigation() -> void:
+    remove_child(quest_menu);
     remove_child(item_menu);
     remove_child(culprit_menu);
     remove_child(navigation);
     remove_child(room_navigation);
-    # start_scene(Configuration.Scene.CONCLUSION);
+    remove_child(end_investigation_menu);
+    start_scene(Configuration.Scene.CONCLUSION);
 
 func add_rooms() -> void:
     room_navigation = load("res://scenes/user-interface/room-navigation/room-navigation.tscn").instance();
@@ -103,13 +110,13 @@ func on_switch_room(new_room_name) -> void:
         add_child(active_room);
         navigation.reset_camera_rotation();
 
-# func start_conclusion() -> void:
-    # conclusion_scene = add_scene("res://scenes/conclusion/conclusion.tscn");
-    # conclusion_scene.connect("finished", self, "end_conclusion");
+func start_conclusion() -> void:
+    conclusion_scene = add_scene("res://scenes/conclusion/conclusion.tscn");
+    conclusion_scene.connect("finished", self, "end_conclusion");
 
-# func end_conclusion() -> void:
-    # remove_child(conclusion_scene);
-    # start_scene(Configuration.Scene.WIN_LOSE);
+func end_conclusion() -> void:
+    remove_child(conclusion_scene);
+    start_scene(Configuration.Scene.WIN_LOSE);
 
 func start_win_loss_scene() -> void:
     win_loss_scene = add_scene("res://scenes/win-lose/win_lose.tscn");

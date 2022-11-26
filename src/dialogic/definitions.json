@@ -28,6 +28,12 @@
 			"value": "0"
 		},
 		{
+			"id": "1669249567-648",
+			"name": "CulpritChoice",
+			"type": 0,
+			"value": "0"
+		},
+		{
 			"id": "1668568200-648",
 			"name": "iguana_quest_complete",
 			"type": 0,
