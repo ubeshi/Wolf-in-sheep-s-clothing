@@ -5,11 +5,13 @@ var camera_rotation;
 export var lerp_speed = 0.05;
 var initial_camera_rotation;
 
+func _init() -> void:
+    initialize_arrow_menu_buttons();
+
 func _ready() -> void:
     camera_pivot = get_node("CameraPivot");
     camera_rotation = camera_pivot.rotation;
     initial_camera_rotation = camera_pivot.rotation;
-    initialize_arrow_menu_buttons();
 
 func _process(_delta):
     camera_pivot.rotation.y = lerp(camera_pivot.rotation.y, camera_rotation.y, lerp_speed);

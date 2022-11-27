@@ -108,9 +108,6 @@ func add_UI(menu) -> void:
     var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
-    if (navigation.is_inside_tree()):
-        var navigation_index = menus.find(navigation);
-        menus.remove(navigation_index);
     for menu_item in menus:
         add_child(menu_item);
 
@@ -157,8 +154,6 @@ func on_switch_room(new_room_name) -> void:
         var scene = load("res://scenes/rooms/" + active_room_name + ".tscn");
         active_room = scene.instance();
         add_child(active_room);
-        if (!navigation.is_inside_tree()):
-            add_child(navigation);
         navigation.reset_camera_rotation();
 
 func start_conclusion() -> void:
