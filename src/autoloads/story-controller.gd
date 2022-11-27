@@ -85,11 +85,12 @@ func remove_UI(menu) -> void:
         "room_navigation":
             current_menu = room_navigation;
 
-    var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
     for menu_item in menus:
         remove_child(menu_item);
+    navigation.hide_buttons();
 
 func add_UI(menu) -> void:
     var current_menu = null;
@@ -105,13 +106,12 @@ func add_UI(menu) -> void:
         "room_navigation":
             current_menu = room_navigation;
 
-    var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
-    if (GameState.get_is_in_menu()):
-        GameState.set_is_in_menu(false);
     for menu_item in menus:
         add_child(menu_item);
+    navigation.show_buttons();
 
 func start_investigation() -> void:
     # warning-ignore:return_value_discarded
