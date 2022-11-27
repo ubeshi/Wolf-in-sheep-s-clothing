@@ -108,6 +108,8 @@ func add_UI(menu) -> void:
     var menus = [culprit_menu, end_investigation_menu, item_menu, navigation, quest_menu, room_navigation];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
+    if (GameState.get_is_in_menu()):
+        GameState.set_is_in_menu(false);
     for menu_item in menus:
         add_child(menu_item);
 
