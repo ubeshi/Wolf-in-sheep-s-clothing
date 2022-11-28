@@ -33,6 +33,21 @@ func check_quest_status() -> void:
 
 func dialog_ended(_timeline_name) -> void:
     GameState.set_is_in_dialogue(false);
+    var timeline_name_length = _timeline_name.length();
+    var timeline_number = int(_timeline_name[timeline_name_length - 1]);
+    if (timeline_number == 2):
+        return;
+    var character_name = _timeline_name.left(timeline_name_length - 1);
+    match character_name:
+        "bunny":
+            CulpritHints.add_bunny_hint();
+        "cat":
+            CulpritHints.add_cat_hint();
+            CulpritHints.add_frog_hint();
+        "dog":
+            CulpritHints.add_dog_hint();
+        "fox":
+            CulpritHints.add_fox_hint();
 
 func dialogic_signal_event(event):
     if event == fetch_quest.start_signal:
