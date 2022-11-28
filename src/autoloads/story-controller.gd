@@ -69,6 +69,50 @@ func end_study_intro() -> void:
     remove_child(study_intro_scene);
     start_investigation();
 
+func remove_UI(menu) -> void:
+    var current_menu = null;
+    match menu:
+        "culprit_menu":
+            current_menu = culprit_menu;
+        "end_investigation_menu":
+            current_menu = end_investigation_menu;
+        "item_menu":
+            current_menu = item_menu;
+        "navigation":
+            current_menu = navigation;
+        "quest_menu":
+            current_menu = quest_menu;
+        "room_navigation":
+            current_menu = room_navigation;
+
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    var current_menu_index = menus.find(current_menu);
+    menus.remove(current_menu_index);
+    for menu_item in menus:
+        remove_child(menu_item);
+    navigation.hide_buttons();
+
+func add_UI(menu) -> void:
+    var current_menu = null;
+    match menu:
+        "culprit_menu":
+            current_menu = culprit_menu;
+        "end_investigation_menu":
+            current_menu = end_investigation_menu;
+        "item_menu":
+            current_menu = item_menu;
+        "quest_menu":
+            current_menu = quest_menu;
+        "room_navigation":
+            current_menu = room_navigation;
+
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    var current_menu_index = menus.find(current_menu);
+    menus.remove(current_menu_index);
+    for menu_item in menus:
+        add_child(menu_item);
+    navigation.show_buttons();
+
 func start_investigation() -> void:
     # warning-ignore:return_value_discarded
     end_investigation_menu = add_scene("res://scenes/user-interface/end-investigation-menu/end-investigation-menu.tscn");
@@ -82,6 +126,10 @@ func start_investigation() -> void:
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
     on_switch_room("study");
     add_rooms();
+    var ui_menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    for ui_menu in ui_menus:
+        ui_menu.connect("opened_menu", self, "remove_UI");
+        ui_menu.connect("closed_menu", self, "add_UI");
     yield(camera_effects_scene.fade_from_black(), "completed");
 
 func end_investigation() -> void:

@@ -23,6 +23,7 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/CulpritMenu";
 
 func handle_menu_opened() -> void:
+    emit_signal("opened_menu", "culprit_menu");
     var culprit_list_node = culprit_menu_body_node.get_node("CulpritList");
     var buttons = get_culprit_list_buttons(characters);
     for button in buttons:
@@ -30,6 +31,7 @@ func handle_menu_opened() -> void:
     set_selected_culprit(characters[0]);
 
 func handle_menu_closed() -> void:
+    emit_signal("closed_menu", "culprit_menu");
     var culprit_list_node = culprit_menu_body_node.get_node("CulpritList");
     for culprit in culprit_list_node.get_children():
         culprit_list_node.remove_child(culprit);
