@@ -1,4 +1,5 @@
 extends Menu
+
 var quest_list = Quests.quest_list;
 var empty_quest = EmptyQuest.new();
 
@@ -11,6 +12,7 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/QuestMenu";
 
 func handle_menu_opened() -> void:
+    emit_signal("opened_menu", "quest_menu");
     if quest_list.size() > 0:
         set_selected_quest(quest_list[0]);
     else:
@@ -22,6 +24,7 @@ func handle_menu_opened() -> void:
         quest_list_node.add_child(button);
 
 func handle_menu_closed() -> void:
+    emit_signal("closed_menu", "quest_menu");
     var quest_list_node = quest_menu_body_node.get_node("QuestList");
     for quest in quest_list_node.get_children():
         quest_list_node.remove_child(quest);

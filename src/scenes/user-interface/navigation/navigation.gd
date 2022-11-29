@@ -38,3 +38,11 @@ func _on_RightButton_pressed() -> void:
 func reset_camera_rotation() -> void:
     camera_pivot.rotation.y = initial_camera_rotation.y;
     camera_rotation.y = initial_camera_rotation.y;
+
+func hide_buttons() -> void:
+    var arrow_container_node = get_node("CanvasLayer/ArrowContainer");
+    arrow_container_node.visible = false;
+
+func show_buttons() -> void:
+    var arrow_container_node = get_node("CanvasLayer/ArrowContainer");
+    arrow_container_node.visible = true;
