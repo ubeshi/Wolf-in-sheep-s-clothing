@@ -16,13 +16,14 @@ var navigation;
 var room_navigation;
 var end_investigation_menu;
 var music;
+var music_menu;
 
 var active_room = null;
 var active_room_name = "";
 
 func _ready():
     camera_effects_scene = add_scene("res://scenes/camera-effects.tscn");
-    music = add_scene("res://scenes/user-interface/music-menu/music-menu.tscn");
+    music = add_scene("res://scenes/user-interface/music-menu/music.tscn");
     start_scene(Configuration.initial_scene);
 
 func start_scene(scene) -> void:
@@ -87,7 +88,7 @@ func remove_UI(menu) -> void:
         "room_navigation":
             current_menu = room_navigation;
 
-    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation, music_menu];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
     for menu_item in menus:
@@ -108,7 +109,7 @@ func add_UI(menu) -> void:
         "room_navigation":
             current_menu = room_navigation;
 
-    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
+    var menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation, music_menu];
     var current_menu_index = menus.find(current_menu);
     menus.remove(current_menu_index);
     for menu_item in menus:
@@ -126,6 +127,9 @@ func start_investigation() -> void:
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
+    # warning-ignore:return_value_discarded
+    music_menu = add_scene("res://scenes/user-interface/music-menu/music-menu.tscn");
+    music_menu.connect("toggle_audio", self, "on_toggle_audio");
 
     on_switch_room("study");
     add_rooms();
@@ -176,3 +180,6 @@ func start_win_loss_scene() -> void:
 func end_win_loss_scene() -> void:
     remove_child(win_loss_scene);
     # TBD
+    
+func on_toggle_audio(state) -> void:
+    music.toggle_audio(state);
