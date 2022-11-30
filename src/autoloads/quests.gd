@@ -13,6 +13,7 @@ func remove_quest(remove: PlayerQuest) -> void:
         if quest.label == remove.label:
             quest_list.erase(quest);
             completed_quests += 1;
+            completed_quests = min(completed_quests, 5);
             next_quest(remove);
 
 func next_quest(quest: PlayerQuest) -> void:
