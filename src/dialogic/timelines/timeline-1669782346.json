@@ -2,34 +2,74 @@
 	"events": [
 		{
 			"condition": "",
-			"definition": "1668654833-787",
+			"definition": "1668654902-918",
 			"event_id": "dialogic_012",
-			"value": "True"
-		},
-		{
-			"condition": "",
-			"definition": "1668654821-648",
-			"event_id": "dialogic_012",
-			"value": "3"
+			"value": "2"
 		},
 		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
-			"character": "character-1668053403.json",
+			"character": "character-1667882996.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
-				"0": true,
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668058298.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
 				"1": false,
 				"2": false,
 				"3": false,
 				"4": false
 			},
 			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1668058298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Say,  I'm feeling quite hungry. Are you able to bring me a slice of Bunny's carrot cake?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668058298.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
 			"z_index": 0
 		},
 		{
@@ -49,93 +89,20 @@
 				"3": false,
 				"4": false
 			},
-			"type": 0,
+			"type": 1,
 			"z_index": 0
 		},
 		{
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Bunny, I found your bag in the study\nHere you go!"
-		},
-		{
-			"character": "character-1668053403.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "BLIMEY!\nwell init this a surprise\nThank ya, Wolf\n...\n...\nya didnt happen ta look in me bag did ya?"
-		},
-		{
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "uhm.. no?"
-		},
-		{
-			"character": "character-1668053403.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "good on ya then....\nwell.. best be careful. seems we've got a killer in the midst"
-		},
-		{
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "yeah... you too..."
-		},
-		{
-			"emit_signal": "bunny_complete",
+			"emit_signal": "fox_quest",
 			"event_id": "dialogic_040"
 		},
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1668053403.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"definition": "1668654833-787",
+			"definition": "1668654902-918",
 			"event_id": "dialogic_014",
-			"operation": "=",
+			"operation": "+",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "False"
-		},
-		{
-			"event_id": "dialogic_013"
+			"set_value": "1"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -143,7 +110,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1668054657.json",
-		"name": "bunny3"
+		"file": "timeline-1669782346.json",
+		"name": "fox2"
 	}
 }
