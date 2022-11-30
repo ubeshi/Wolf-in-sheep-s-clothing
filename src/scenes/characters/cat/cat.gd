@@ -11,3 +11,7 @@ func _init():
 func _ready():
     model = get_node("CatModel/12221_Cat_v1_l3");
     original_material = get_node("CatModel/12221_Cat_v1_l3").get_surface_material(0).duplicate();
+
+func add_hint(character_name) -> void:
+    if (character_name == self.npc):
+        CulpritHints.add_cat_hint();

@@ -2,15 +2,9 @@
 	"events": [
 		{
 			"condition": "",
-			"definition": "1668654833-787",
-			"event_id": "dialogic_012",
-			"value": "True"
-		},
-		{
-			"condition": "",
 			"definition": "1668654821-648",
 			"event_id": "dialogic_012",
-			"value": "3"
+			"value": "2"
 		},
 		{
 			"animation": "[Default]",
@@ -44,7 +38,7 @@
 			"portrait_definition": "",
 			"position": {
 				"0": false,
-				"1": false,
+				"1": true,
 				"2": false,
 				"3": false,
 				"4": false
@@ -53,38 +47,22 @@
 			"z_index": 0
 		},
 		{
-			"character": "character-1667882996.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Bunny, I found your bag in the study\nHere you go!"
+			"text": "... The bunny seems to be missing something. Take a look around to see if you can find it."
 		},
 		{
-			"character": "character-1668053403.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "BLIMEY!\nwell init this a surprise\nThank ya, Wolf\n...\n...\nya didnt happen ta look in me bag did ya?"
-		},
-		{
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "uhm.. no?"
-		},
-		{
-			"character": "character-1668053403.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "good on ya then....\nwell.. best be careful. seems we've got a killer in the midst"
-		},
-		{
-			"character": "character-1667882996.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "yeah... you too..."
-		},
-		{
-			"emit_signal": "bunny_complete",
+			"emit_signal": "bunny_quest",
 			"event_id": "dialogic_040"
+		},
+		{
+			"definition": "1668654821-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"animation": "[Default]",
@@ -127,23 +105,12 @@
 			"z_index": 0
 		},
 		{
-			"definition": "1668654833-787",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "False"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
 			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1668054657.json",
-		"name": "bunny3"
+		"file": "timeline-1669782836.json",
+		"name": "bunny2"
 	}
 }
