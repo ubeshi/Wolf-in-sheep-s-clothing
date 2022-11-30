@@ -223,7 +223,7 @@ GameState="*res://autoloads/game-state.gd"
 StoryController="*res://autoloads/story-controller.gd"
 Configuration="*res://autoloads/configuration.gd"
 CulpritHints="*res://autoloads/culprit-hints.gd"
-WinLossFlag="*res://autoloads/win-loss-flag.gd"
+StoryController="*res://autoloads/story-controller.gd"
 Quests="*res://autoloads/quests.gd"
 
 [editor_plugins]
