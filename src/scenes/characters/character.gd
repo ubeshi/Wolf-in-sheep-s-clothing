@@ -17,37 +17,39 @@ func hover_unfocus() -> void:
 func interact() -> void:
     if (!GameState.is_in_interaction()):
         GameState.set_is_in_dialogue(true);
-        check_quest_status();
+        var quest_in_progress = check_quest_status();
+        if (quest_in_progress):
+            GameState.set_is_in_dialogue(false);
+            return;
         var index = Dialogic.get_variable(npc + '_index');
         var dialog = Dialogic.start(npc + str(index));
         dialog.connect("timeline_end", self, "dialog_ended");
         dialog.connect("dialogic_signal", self, "dialogic_signal_event");
         add_child(dialog);
 
-func check_quest_status() -> void:
+func check_quest_status() -> bool:
     for quest in Quests.quest_list:
         if quest.label == fetch_quest.quest.label:
             for item in Inventory.held_items:
                 if item.label == fetch_quest.quest.item.label:
                     Dialogic.set_variable(npc + '_quest_complete', true);
+                    return false;
+            return true;
+    return false;
 
-func dialog_ended(_timeline_name) -> void:
+func dialog_ended(timeline_name) -> void:
     GameState.set_is_in_dialogue(false);
-    var timeline_name_length = _timeline_name.length();
-    var timeline_number = int(_timeline_name[timeline_name_length - 1]);
+    var timeline_name_length = timeline_name.length();
+    var timeline_number = int(timeline_name[timeline_name_length - 1]);
     if (timeline_number == 2):
+        # If timeline_number == 2, no new hints are provided in the corresponding dialog
         return;
-    var character_name = _timeline_name.left(timeline_name_length - 1);
-    match character_name:
-        "bunny":
-            CulpritHints.add_bunny_hint();
-        "cat":
-            CulpritHints.add_cat_hint();
-            CulpritHints.add_frog_hint();
-        "dog":
-            CulpritHints.add_dog_hint();
-        "fox":
-            CulpritHints.add_fox_hint();
+    var character_name = timeline_name.left(timeline_name_length - 1);
+    add_hint(character_name);
+
+# Override in child class
+func add_hint(_character_name) -> void:
+    pass;
 
 func dialogic_signal_event(event):
     if event == fetch_quest.start_signal:

@@ -11,3 +11,7 @@ func _init():
 func _ready():
     model = get_node("FrogModel/frog_mascot");
     original_material = get_node("FrogModel/frog_mascot").get_surface_material(0).duplicate();
+
+func add_hint(character_name) -> void:
+    if (character_name == self.npc):
+        CulpritHints.add_frog_hint();
