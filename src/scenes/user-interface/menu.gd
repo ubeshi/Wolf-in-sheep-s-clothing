@@ -6,6 +6,9 @@ var open_menu_button_path;
 var close_menu_button_path;
 var menu_path;
 
+signal opened_menu(menu);
+signal closed_menu(menu);
+
 onready var open_menu_button = get_node(open_menu_button_path);
 onready var close_menu_button = get_node(close_menu_button_path);
 

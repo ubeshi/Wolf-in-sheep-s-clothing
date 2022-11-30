@@ -12,6 +12,7 @@ func _init() -> void:
     self.menu_path = "CanvasLayer/ItemsMenu";
 
 func handle_menu_opened() -> void:
+    emit_signal("opened_menu", "item_menu");
     if held_items.size() > 0:
         set_selected_item(held_items[0]);
     else:
@@ -23,6 +24,7 @@ func handle_menu_opened() -> void:
         item_list_node.add_child(button);
 
 func handle_menu_closed() -> void:
+    emit_signal("closed_menu", "item_menu");
     var item_list_node = items_menu_body_node.get_node("ItemList");
     for item in item_list_node.get_children():
         item_list_node.remove_child(item);
