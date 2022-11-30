@@ -6,6 +6,7 @@ var empty_quest = EmptyQuest.new();
 var quest_menu_body_node_path = "CanvasLayer/QuestMenu/MarginContainer/ColorRect/MarginContainer/QuestMenuBody";
 onready var quest_menu_body_node = get_node(quest_menu_body_node_path);
 
+
 func _init() -> void:
     self.open_menu_button_path = "CanvasLayer/UI/MarginContainer/ButtonOpenQuestMenu";
     self.close_menu_button_path = quest_menu_body_node_path + "/QuestMenuActions/ButtonCloseQuestMenu";
@@ -13,6 +14,9 @@ func _init() -> void:
 
 func handle_menu_opened() -> void:
     emit_signal("opened_menu", "quest_menu");
+    var total_quests = str(Quests.total_quests);
+    var completed_quests = str(Quests.completed_quests);
+    var quest_status_node = get_node(quest_menu_body_node_path + "/QuestStatus/QuestStatusLabel");
     if quest_list.size() > 0:
         set_selected_quest(quest_list[0]);
     else:
@@ -22,6 +26,10 @@ func handle_menu_opened() -> void:
     var buttons = get_quest_list_buttons(quest_list);
     for button in buttons:
         quest_list_node.add_child(button);
+    if (completed_quests != total_quests):
+        quest_status_node.text = completed_quests + " / " + total_quests + " Quests Completed";
+    else:
+        quest_status_node.text = "All Quests Completed"
 
 func handle_menu_closed() -> void:
     emit_signal("closed_menu", "quest_menu");
@@ -34,7 +42,7 @@ func get_quest_list_buttons(quests: Array) -> Array:
     var buttons = [];
     for quest in quests:
         var button = Button.new();
-        var text = quest.label;
+        button.text = quest.label;
         button.connect("pressed", self, "set_selected_quest", [quest]);
         buttons.append(button);
     return buttons;
