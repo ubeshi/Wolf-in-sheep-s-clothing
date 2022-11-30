@@ -15,12 +15,14 @@ var culprit_menu;
 var navigation;
 var room_navigation;
 var end_investigation_menu;
+var music;
 
 var active_room = null;
 var active_room_name = "";
 
 func _ready():
     camera_effects_scene = add_scene("res://scenes/camera-effects.tscn");
+    music = add_scene("res://scenes/user-interface/music-menu/music-menu.tscn");
     start_scene(Configuration.initial_scene);
 
 func start_scene(scene) -> void:
@@ -124,6 +126,7 @@ func start_investigation() -> void:
     culprit_menu = add_scene("res://scenes/user-interface/culprit-menu/culprit-menu.tscn");
     # warning-ignore:return_value_discarded
     navigation = add_scene("res://scenes/user-interface/navigation/navigation.tscn");
+
     on_switch_room("study");
     add_rooms();
     var ui_menus = [culprit_menu, end_investigation_menu, item_menu, quest_menu, room_navigation];
