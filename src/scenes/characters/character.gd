@@ -5,6 +5,7 @@ onready var original_material;
 onready var surface_material = 0;
 onready var npc;
 onready var fetch_quest;
+const NO_HINT_TIMELINE = 2;
 
 func hover_focus() -> void:
     var material = original_material.duplicate();
@@ -41,11 +42,9 @@ func dialog_ended(timeline_name) -> void:
     GameState.set_is_in_dialogue(false);
     var timeline_name_length = timeline_name.length();
     var timeline_number = int(timeline_name[timeline_name_length - 1]);
-    if (timeline_number == 2):
-        # If timeline_number == 2, no new hints are provided in the corresponding dialog
-        return;
-    var character_name = timeline_name.left(timeline_name_length - 1);
-    add_hint(character_name);
+    if (timeline_number != NO_HINT_TIMELINE):
+        var character_name = timeline_name.left(timeline_name_length - 1);
+        add_hint(character_name);
 
 # Override in child class
 func add_hint(_character_name) -> void:
