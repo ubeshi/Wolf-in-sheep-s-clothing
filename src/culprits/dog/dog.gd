@@ -10,5 +10,5 @@ func _init():
     self.hints = [
         "Hung out with Fox in the living room, went to the garden, and then stayed in the basement with Cat and Frog.",
         "Saw Bunny leaving the kitchen to the living room. Looked like Bunny was carrying a heavy bag.",
-        "Found a bloody knife in the garden. Did the killer leave through the window?",
+        "Found something suspicious in the garden. How did it get there?",
     ];
