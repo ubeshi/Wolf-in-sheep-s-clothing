@@ -65,16 +65,6 @@
 			"text": "I'll be allroight\nI wos workin on this bloke with a much sharpa knife\nHm... mightve been in me backpack but I seem to have misplaced it!"
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "... The bunny seems to be missing something. Take a look around to see if you can find it."
-		},
-		{
-			"emit_signal": "bunny_quest",
-			"event_id": "dialogic_040"
-		},
-		{
 			"definition": "1668654821-648",
 			"event_id": "dialogic_014",
 			"operation": "+",

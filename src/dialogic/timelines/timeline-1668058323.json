@@ -65,12 +65,6 @@
 			"text": "If the Fox was at the bottom of the stairs, it couldn't have been him"
 		},
 		{
-			"character": "character-1668058298.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Say,  I'm feeling quite hungry. Are you able to bring me a slice of Bunny's carrot cake?"
-		},
-		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -109,10 +103,6 @@
 			},
 			"type": 1,
 			"z_index": 0
-		},
-		{
-			"emit_signal": "fox_quest",
-			"event_id": "dialogic_040"
 		},
 		{
 			"definition": "1668654902-918",

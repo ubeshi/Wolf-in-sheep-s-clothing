@@ -220,11 +220,11 @@ config/icon="res://assets/icon.png"
 
 Inventory="*res://autoloads/inventory.gd"
 GameState="*res://autoloads/game-state.gd"
+StoryController="*res://autoloads/story-controller.gd"
 Configuration="*res://autoloads/configuration.gd"
 CulpritHints="*res://autoloads/culprit-hints.gd"
 StoryController="*res://autoloads/story-controller.gd"
-Quests="*res://autoloads/Quests.gd"
-WinLossFlag="*res://autoloads/win-loss-flag.gd"
+Quests="*res://autoloads/quests.gd"
 
 [editor_plugins]
 

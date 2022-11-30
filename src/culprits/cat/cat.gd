@@ -7,4 +7,8 @@ func _init():
     self.image_large = "res://assets/culprits/cat/cat_large.png";
     self.label = "Cat";
     self.description = "A cat sans hat.";
-    self.hints = ["Cat hint 1", "Cat hint 2", "Cat hint 3"];
+    self.hints = [
+        "Was hanging out with Frog during the murder.",
+        "Heard someone come down earlier and grab the rope from the haybales.",
+        "The killer must have walked through the kitchen.",
+    ];

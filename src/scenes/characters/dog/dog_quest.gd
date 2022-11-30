@@ -3,7 +3,7 @@ extends PlayerQuest
 class_name DogQuest
 
 func _init():
-    self.label = "dog";
+    self.label = "Dog's Quest";
     self.description = "Dog misplaced his Top Hat in the Living Room. Help him find it.";
     self.item = TopHat.new();
 
