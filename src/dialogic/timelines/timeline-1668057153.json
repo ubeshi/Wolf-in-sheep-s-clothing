@@ -56,7 +56,7 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Heres your Top Hat back."
+			"text": "Hey, Dog. Here's your Top Hat."
 		},
 		{
 			"emit_signal": "dog_complete",
@@ -74,13 +74,19 @@
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Thanks Wolf. I'm starting to think you didnt kill Horse."
+			"text": "Thanks Wolf! I'm starting to think you didn't kill Horse."
 		},
 		{
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Thats because I didnt!"
+			"text": "I guess you can’t judge a book by its cover."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ain't that the truth my fellow quadrupedal pal."
 		},
 		{
 			"character": "character-1668057128.json",
