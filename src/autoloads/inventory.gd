@@ -15,3 +15,7 @@ func remove_item(item: PlayerItem) -> void:
     for held in held_items:
         if held.label == item.label:
            held_items.erase(held);
+
+func add_item_if_not_yet_picked_up(item: PlayerItem) -> void:
+    if !is_item_picked_up(item):
+        add_item(item);

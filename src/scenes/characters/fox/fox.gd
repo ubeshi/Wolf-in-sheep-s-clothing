@@ -11,3 +11,7 @@ func _init():
 func _ready():
     model = get_node("FoxModel/foxMesh");
     original_material = get_node("FoxModel/foxMesh").get_surface_material(0).duplicate();
+
+func add_hint(character_name) -> void:
+    if (character_name == self.npc):
+        CulpritHints.add_fox_hint();

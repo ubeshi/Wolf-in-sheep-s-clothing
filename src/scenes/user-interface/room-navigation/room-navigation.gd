@@ -46,11 +46,6 @@ func _on_ButtonGardenMenu_pressed():
     set_active_room("Garden");
     .handle_close_menu_button_pressed();
 
-func _on_ButtonFoyerMenu_pressed():
-    emit_signal("switch_room", "foyer");
-    set_active_room("Foyer");
-    .handle_close_menu_button_pressed();
-
 func _on_ButtonLivingRoomMenu_pressed():
     emit_signal("switch_room", "living-room");
     set_active_room("LivingRoom");

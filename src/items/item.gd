@@ -15,7 +15,7 @@ func _ready() -> void:
 
 func pick_up_item() -> void:
     self.visible = false;
-    Inventory.add_item(self);
+    Inventory.add_item_if_not_yet_picked_up(self);
 
 func hover_focus() -> void:
     var material = self.original_material.duplicate();

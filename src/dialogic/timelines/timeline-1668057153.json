@@ -89,16 +89,16 @@
 			"text": "By the way, I smelled something strange in the garden early.\nMaybe you should take a look around."
 		},
 		{
-			"emit_signal": "dog_quest",
+			"emit_signal": "dog_complete",
 			"event_id": "dialogic_040"
 		},
 		{
-			"definition": "1668664212-787",
+			"definition": "1668664206-648",
 			"event_id": "dialogic_014",
-			"operation": "+",
+			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "1"
+			"set_value": "False"
 		},
 		{
 			"event_id": "dialogic_013"
