@@ -44,7 +44,7 @@ func get_item_list_buttons(items: Array) -> Array:
         image.resize(small_image_size, small_image_size);
         image_texture.create_from_image(image);
         button.texture_normal = image_texture;
-        
+
         button.connect("pressed", self, "set_selected_item", [item]);
         buttons.append(button);
     return buttons;
@@ -61,6 +61,6 @@ func set_selected_item(item: PlayerItem) -> void:
     image.resize(large_image_size, large_image_size);
     image_texture.create_from_image(image);
     selectedItemImageNode.texture = image_texture;
-    
+
     selectedItemLabelNode.text = item.label;
     selectedItemDescriptionNode.text = item.description;
