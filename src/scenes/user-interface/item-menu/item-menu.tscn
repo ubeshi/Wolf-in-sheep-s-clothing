@@ -87,20 +87,20 @@ size_flags_vertical = 3
 margin_bottom = 492.0
 
 [node name="ItemText" type="VBoxContainer" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem"]
-margin_left = 4.0
+margin_left = 8.0
 margin_right = 944.0
 margin_bottom = 492.0
 size_flags_horizontal = 3
 
 [node name="ItemLabel" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
-margin_right = 940.0
+margin_right = 936.0
 margin_bottom = 31.0
 custom_fonts/font = SubResource( 1 )
 text = "You have no items."
 
 [node name="ItemDescription" type="Label" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/SelectedItem/ItemText"]
 margin_top = 35.0
-margin_right = 940.0
+margin_right = 936.0
 margin_bottom = 49.0
 autowrap = true
 
@@ -114,18 +114,6 @@ margin_top = 500.0
 margin_right = 944.0
 margin_bottom = 520.0
 alignment = 2
-
-[node name="ButtonUseItem" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
-margin_left = 743.0
-margin_right = 780.0
-margin_bottom = 20.0
-text = "Use"
-
-[node name="ButtonCombineItem" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
-margin_left = 784.0
-margin_right = 853.0
-margin_bottom = 20.0
-text = "Combine"
 
 [node name="ButtonCloseItemsMenu" type="Button" parent="CanvasLayer/ItemsMenu/MarginContainer/ColorRect/MarginContainer/ItemsMenuBody/ItemsMenuActions"]
 margin_left = 857.0
