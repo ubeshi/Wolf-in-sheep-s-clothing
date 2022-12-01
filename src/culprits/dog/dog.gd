@@ -8,7 +8,7 @@ func _init():
     self.label = "Dog";
     self.description = "Likes to dig holes and eat from bowls.";
     self.hints = [
-        "Hung out with Fox in the living room, went to the garden, and then stayed in the basement with Cat and Frog.",
+        "Dog was with Fox, then went outside, then stayed in the basement with Cat and Frog.",
         "Saw Bunny leaving the kitchen to the living room. Looked like Bunny was carrying a heavy bag.",
         "Found something suspicious in the garden. How did it get there?",
     ];
