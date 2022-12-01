@@ -1,5 +1,8 @@
 extends Menu
 
+var large_image_size = 256;
+var small_image_size = 64;
+
 var bunny = Bunny.new();
 var cat = Cat.new();
 var dog = Dog.new();
@@ -41,8 +44,7 @@ func get_culprit_list_buttons(culprits: Array) -> Array:
     var buttons = [];
     for culprit in culprits:
         var button = TextureButton.new();
-        var texture = load(culprit.image_small);
-        button.texture_normal = texture;
+        button.texture_normal = get_resized_image(culprit.image_small, small_image_size);
         button.connect("pressed", self, "set_selected_culprit", [culprit]);
         buttons.append(button);
     return buttons;
@@ -74,6 +76,14 @@ func set_selected_culprit(culprit: Culprit) -> void:
         else:
             selectedHintNode.text = "hint not available";
 
-    selectedItemImageNode.texture = load(culprit.image_large);
+    selectedItemImageNode.texture = get_resized_image(culprit.image_large, large_image_size);
     selectedItemLabelNode.text = culprit.label;
     selectedItemDescriptionNode.text = culprit.description;
+
+func get_resized_image(image_path: String, size: int) -> ImageTexture:
+    var image = load(image_path).get_data();
+    image.resize(size, size);
+    var image_texture = ImageTexture.new();
+    image_texture.create_from_image(image);
+    return image_texture;
+

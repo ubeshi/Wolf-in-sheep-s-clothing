@@ -21,10 +21,10 @@ func initialize_arrow_menu_buttons() -> void:
     right_button.connect("pressed", self, "handle_right_navigation_button_pressed");
 
 func handle_left_navigation_button_pressed() -> void:
-    set_camera_position(-1);
+    set_camera_position(1);
 
 func handle_right_navigation_button_pressed() -> void:
-    set_camera_position(1);
+    set_camera_position(-1);
 
 func set_camera_position(rotation) -> void:
     camera_rotation.y += rotation*PI/2;
