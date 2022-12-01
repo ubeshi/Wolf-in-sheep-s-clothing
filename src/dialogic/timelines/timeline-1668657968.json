@@ -28,6 +28,12 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
+			"text": "If you get stuck, try talking to the other guests multiple times."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
 			"text": "Good luck."
 		}
 	],
