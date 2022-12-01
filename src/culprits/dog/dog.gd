@@ -4,7 +4,7 @@ class_name Dog
 
 func _init():
     self.image_small = "res://assets/culprits/dog/dog.png";
-    self.image_large = "res://assets/culprits/dog/dog_large.png";
+    self.image_large = "res://assets/culprits/dog/dog.png";
     self.label = "Dog";
     self.description = "Likes to dig holes and eat from bowls.";
     self.hints = [

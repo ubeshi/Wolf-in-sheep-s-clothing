@@ -180,6 +180,6 @@ func start_win_loss_scene() -> void:
 func end_win_loss_scene() -> void:
     remove_child(win_loss_scene);
     # TBD
-    
+
 func on_toggle_audio(state) -> void:
     music.toggle_audio(state);

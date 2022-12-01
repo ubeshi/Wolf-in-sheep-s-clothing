@@ -4,7 +4,7 @@ class_name Fox
 
 func _init():
     self.image_small = "res://assets/culprits/fox/fox.png";
-    self.image_large = "res://assets/culprits/fox/fox_large.png";
+    self.image_large = "res://assets/culprits/fox/fox.png";
     self.label = "Fox";
     self.description = "Friends with Slippy.";
     self.hints = [
