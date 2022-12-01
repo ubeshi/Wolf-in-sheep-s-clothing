@@ -1,7 +1,7 @@
 extends Node
 
 const quest_list = [];
-const total_quests = 5;
+const total_quests = 4;
 var completed_quests = 0;
 
 func add_quest(quest: PlayerQuest) -> void:
@@ -13,7 +13,7 @@ func remove_quest(remove: PlayerQuest) -> void:
         if quest.label == remove.label:
             quest_list.erase(quest);
             completed_quests += 1;
-            completed_quests = min(completed_quests, 5);
+            completed_quests = min(completed_quests, total_quests);
             next_quest(remove);
 
 func next_quest(quest: PlayerQuest) -> void:
