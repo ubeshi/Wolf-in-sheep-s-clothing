@@ -79,6 +79,12 @@
 			"text": "Ah go away!!!"
 		},
 		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, dont be such a scaredy-cat, Frog."
+		},
+		{
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -160,12 +166,6 @@
 		},
 		{
 			"event_id": "dialogic_013"
-		},
-		{
-			"character": "character-1668057272.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Oh, dont be such a scaredy-cat, Frog."
 		}
 	],
 	"metadata": {
