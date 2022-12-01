@@ -16,7 +16,7 @@ points = PoolVector3Array( -0.673064, 0.1258, 2.19284, 0.721511, 0.1258, 2.19284
 [node name="Spatial" type="Spatial"]
 
 [node name="Horse" type="StaticBody" parent="." groups=["Characters"]]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 6.7886, 0, -2.49111 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 4.58561, 0, -3.78838 )
 script = ExtResource( 7 )
 
 [node name="HorseModel" parent="Horse" instance=ExtResource( 6 )]
