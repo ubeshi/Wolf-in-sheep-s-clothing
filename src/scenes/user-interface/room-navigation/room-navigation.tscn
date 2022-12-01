@@ -175,7 +175,7 @@ margin_right = 944.0
 margin_bottom = 252.0
 alignment = 2
 
-[node name="ButtonFoyerMenu" type="Button" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect" groups=["Rooms"]]
+[node name="ButtonFoyerMenu" type="Button" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/FirstFloorSelect"]
 margin_left = 342.0
 margin_right = 389.0
 margin_bottom = 20.0

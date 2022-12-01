@@ -3,10 +3,10 @@ extends PlayerItem
 class_name WineBottle
 
 func _init():
-    self.icon_image_large = "res://assets/items/pudding/pudding-large.png";
-    self.icon_image_small = "res://assets/items/pudding/pudding-small.png";
+    self.icon_image_large = "res://assets/items/wine-bottle/wine-bottle.jpg";
+    self.icon_image_small = "res://assets/items/wine-bottle/wine-bottle.jpg";
     self.label = "Wine Bottle";
-    self.description = "I'll stay until the sun comes down, down, down.";
+    self.description = "A wine bottle from the Horse's personal stock. Unopened.";
 
 func _ready():
     self.model = get_node("WineBottleModel/wine_mesh");
