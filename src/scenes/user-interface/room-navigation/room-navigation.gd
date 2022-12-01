@@ -6,6 +6,7 @@ var active_room = null setget set_active_room;
 
 var rooms_menu_body_node_path = "CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"
 onready var rooms_menu_body_node = get_node(rooms_menu_body_node_path);
+onready var active_room_label_node = get_node("CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer/ActiveRoomLabel");
 
 signal switch_room(room);
 
@@ -18,6 +19,7 @@ func _ready() -> void:
     set_active_room("Study");
 
 func set_active_room(value) -> void:
+    active_room_label_node.text = get_room_name(value);
     active_room = value;
     if active_room in rooms:
         var room_buttons = get_tree().get_nodes_in_group("Rooms");
@@ -65,3 +67,9 @@ func _on_ButtonCellarMenu_pressed():
     emit_signal("switch_room", "cellar");
     set_active_room("Cellar");
     .handle_close_menu_button_pressed();
+
+func get_room_name(room_value: String) -> String:
+    if (room_value == "LivingRoom"):
+        return "Living Room";
+    else:
+        return room_value;
