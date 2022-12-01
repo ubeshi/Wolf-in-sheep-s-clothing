@@ -68,6 +68,9 @@ func focus_camera_on_character(camera_focus: Spatial, character_node: Node) -> v
     camera_focus_destination = get_transform_for_character(character_node) \
         .translated(camera_focus_y_offset);
     current_camera_state = CAMERA_STATE.MOVING;
+    var dialog = Dialogic.start(character_node.name.to_lower() + '-intro');
+    add_child(dialog);
+    yield(get_tree().create_timer(4.0), "timeout");
     yield(self, "camera_movement_complete");
 
 func get_transform_for_character(character_node: Node) -> Transform:

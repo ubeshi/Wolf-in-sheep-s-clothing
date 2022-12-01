@@ -70,37 +70,37 @@
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "OH WOLF!!"
+			"text": "Oh, Wolf!"
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Theres one more thing we forgot to mention!\nDog came down to try some of the fancy wine with us after the hay bale rope when missing"
+			"text": "There's one more thing we forgot to mention.\nDog came down to try that fancy bottle with us after the hay bale rope when missing."
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "We just finished pouring a glass for Dog when we heard all the commotion upstairs"
+			"text": "We just finished pouring a glass for Dog when we heard all the commotion upstairs."
 		},
 		{
-			"character": "character-1667876666.json",
+			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hmm very interesting"
+			"text": "That is interesting.\nThanks Cat."
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "WAIT! Before you go\nHorse promised us that we could try some of his homegrown wine before he was...\nYou know...\nKilled..\nHe said he left in the kitchen and never came back"
+			"text": "Before you go, Horse promised us that we could try some of his homegrown wine when he was...\nstill healthy as a horse...\nHe said he left it in the kitchen and that we should meet him in the cellar.\nHe never showed up."
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Could you bring it for us?\nIf you do we'll let you in on a little secret!"
+			"text": "Could you bring it for us?\nWe want to toast to him one last time.\nIf you do we'll let you in on a little secret!"
 		},
 		{
 			"emit_signal": "cat_quest",

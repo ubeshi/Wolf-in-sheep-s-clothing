@@ -56,13 +56,13 @@
 			"character": "character-1668058298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "When I looked upstairs from the foyer, I saw you coming out of the washroom into the study room. I'm pretty sure it wasn't you"
+			"text": "When I looked upstairs from the foyer, I saw you coming out of the washroom into the study room.\nI'm pretty sure you didn't kill Horse."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "If the Fox was at the bottom of the stairs, it couldn't have been him"
+			"text": "If the Fox was at the bottom of the stairs, it couldn't have been him."
 		},
 		{
 			"animation": "[Default]",

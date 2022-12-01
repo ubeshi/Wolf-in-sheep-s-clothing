@@ -52,8 +52,8 @@ func get_culprit_list_buttons(culprits: Array) -> Array:
 func set_selected_culprit(culprit: Culprit) -> void:
     var selectedCulpritNode = culprit_menu_body_node.get_node("SelectedCulprit");
     var selectedItemImageNode = selectedCulpritNode.get_node("MarginContainer/CulpritImage");
-    var selectedItemLabelNode = selectedCulpritNode.get_node("CulpritText/CulpritLabel");
-    var selectedItemDescriptionNode = selectedCulpritNode.get_node("CulpritText/CulpritDescription");
+    var selectedItemLabelNode = selectedCulpritNode.get_node("MarginContainer2/CulpritText/CulpritLabel");
+    var selectedItemDescriptionNode = selectedCulpritNode.get_node("MarginContainer2/CulpritText/CulpritDescription");
     var culprit_hints = [];
     match culprit:
         bunny:
@@ -69,7 +69,7 @@ func set_selected_culprit(culprit: Culprit) -> void:
 
     var arr = [1, 2, 3];
     for i in arr:
-        var node_path = "CulpritText/CulpritHint" + str(i);
+        var node_path = "MarginContainer2/CulpritText/CulpritHint" + str(i);
         var selectedHintNode = selectedCulpritNode.get_node(node_path);
         if culprit_hints.size() >= i:
             selectedHintNode.text = culprit_hints[i - 1];

@@ -50,19 +50,43 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Who else did you see tonight?"
+			"text": "Did you see anyone else tonight?"
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, I also saw Bunny walking around when I came back from the garden"
+			"text": "Oh, I also saw Bunny leaving the kitchen when I came back from the garden!"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Looks like Bunny was going into the foyer."
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Bunny was holding a bag... It looked pretty heavy. I almost thought Bunny would fall over!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Strange... I wonder what Bunny was carrying in the bag."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Remember, Wolf."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Those who do not look back from where they come from, will not reach their destination"
 		},
 		{
 			"animation": "[Default]",
@@ -83,12 +107,6 @@
 			},
 			"type": 1,
 			"z_index": 0
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Strange... I wonder what Bunny was carrying in the bag."
 		},
 		{
 			"animation": "[Default]",

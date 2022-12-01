@@ -50,57 +50,109 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What's up dog? Where were you during the murder?"
+			"text": "What's up dog?"
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I was with the Fox in the living room"
+			"text": "..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dog didn't seem amused. Suspicious."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What were you up to tonight?"
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "After talking to the Fox for a while, I went to the garden to get some fresh air"
+			"text": "Oh I began the evening chatting with Fox in the living room."
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It's so cold outside though... I went back into the kitchen and smelled something delicious"
+			"text": "After a long discussion about Horse's carrot-shaped lamp, I took a stroll out to the garden to get some fresh air."
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I traced the smell down to the cellar where I found Cat and Frog trying out some new wines"
+			"text": "It was so cold outside... I came back in almost immediately!"
 		},
 		{
 			"character": "character-1668057128.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I just hung around them and had some wine until we heard the commotion and went upstairs"
+			"text": "When I came back into the kitchen, I smelled something delicious down the stairs so I went down to take a gander."
 		},
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
 			"character": "character-1668057128.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
+			"text": "I traced the smell down to the cellar and guess who I saw?"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I saw Cat and Frog trying out some new wine from Horse's collection!"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We were just chatting away until we heard the commotion and came upstairs."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Poor Horse. At least he looked as snug as a bug in a rug."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just like he lived. As happy as a sandboy."
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Too bad Horse was a few fries short of a happy meal, if you get what I'm saying."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What?"
+		},
+		{
+			"character": "character-1668057128.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Because he was murdered."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks for the info, Dog."
 		},
 		{
 			"animation": "[Default]",
@@ -121,12 +173,6 @@
 			},
 			"type": 1,
 			"z_index": 0
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Looks like the Dog was with Cat and Frog during the murder."
 		},
 		{
 			"definition": "1668664212-787",

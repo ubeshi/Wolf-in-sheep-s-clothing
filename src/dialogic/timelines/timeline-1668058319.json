@@ -50,13 +50,13 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Where were you during the murder?"
+			"text": "Before you start I did not kill Horse. \nWhere were you during the murder?"
 		},
 		{
 			"character": "character-1668058298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I was with Dog until he went out for some fresh air. After that, I just relaxed in the living room until I heard some commotion upstairs and went to check it out."
+			"text": "I was with Dog until he went out for some fresh air. \nAfter that, I just relaxed in the living room until I heard some commotion upstairs and went to check it out."
 		},
 		{
 			"animation": "[Default]",

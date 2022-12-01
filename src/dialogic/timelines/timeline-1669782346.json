@@ -50,7 +50,13 @@
 			"character": "character-1668058298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Say,  I'm feeling quite hungry. Are you able to bring me a slice of Bunny's carrot cake?"
+			"text": "Say, I'm feeling quite hungry.\nAre you able to bring me a slice of Bunny's carrot cake?"
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, I can take a look in the kitchen."
 		},
 		{
 			"animation": "[Default]",

@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"character": "character-1668053403.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is this a case of bunny boiler?!\nYou won't get away with this Wolf."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669785416.json",
+		"name": "bunny-intro"
+	}
+}

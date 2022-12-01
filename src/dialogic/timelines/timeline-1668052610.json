@@ -21,13 +21,43 @@
 			"z_index": 0
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " It's probably too late for a horse doctor..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Guess it's a none-horse-town now..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha, that's a good one. I should write that one down."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay that's enough horsing around."
+		},
+		{
 			"character": "character-1668052581.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "where u wan look huh"
+			"question": "Where should I look?"
 		},
 		{
 			"choice": "Neck",
@@ -40,7 +70,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "** Takes a look at the Dead Horse's neck**"
+			"text": "**shyly glances at the Dead Horse's neck**"
 		},
 		{
 			"character": "",
@@ -52,7 +82,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "That Sucks"
+			"text": "That's pretty terrible."
 		},
 		{
 			"choice": "Leg",
@@ -65,7 +95,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hmm, looks like there's some claw marks on the Horse's leg"
+			"text": "Looks like he fell and he couldn't giddyup..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, looks like there's some marks on the Horse's leg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Could it be claw marks? Or something else?"
 		},
 		{
 			"choice": "Rope",
@@ -78,7 +120,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The rope is connected to the fallen statue... Looks like that's why the horse did got hanged"
+			"text": "The rope is connected to the fallen statue..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whoever did this must have been able to get all the way up to the top of the statue."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They must have really pulled a fast one (on the horse)."
 		},
 		{
 			"event_id": "dialogic_013"
