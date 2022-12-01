@@ -109,6 +109,12 @@
 			"text": "The basement is connected to the kitchen\nSo whoever was in the kitchen must know something about what happened to Horse"
 		},
 		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Be careful...\nCuriosity killed the cat."
+		},
+		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,

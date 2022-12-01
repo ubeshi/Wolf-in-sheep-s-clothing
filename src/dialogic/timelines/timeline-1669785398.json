@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"character": "character-1668058298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Looks like we've got a fox in the henhouse."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669785398.json",
+		"name": "fox-intro"
+	}
+}
