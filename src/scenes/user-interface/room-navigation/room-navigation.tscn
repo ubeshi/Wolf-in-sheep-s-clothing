@@ -94,10 +94,27 @@ margin_top = 20.0
 margin_right = 964.0
 margin_bottom = 540.0
 
-[node name="SpacerStart" type="Control" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"]
 margin_right = 944.0
 margin_bottom = 80.0
-rect_min_size = Vector2( 300, 80 )
+
+[node name="SpacerStart" type="Control" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer"]
+margin_right = 360.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 360, 80 )
+
+[node name="Label" type="Label" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer"]
+margin_left = 364.0
+margin_top = 33.0
+margin_right = 513.0
+margin_bottom = 47.0
+text = "You are currently in the"
+
+[node name="ActiveRoomLabel" type="Label" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer"]
+margin_left = 517.0
+margin_top = 33.0
+margin_right = 517.0
+margin_bottom = 47.0
 
 [node name="SecondFloorSelect" type="HBoxContainer" parent="CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"]
 margin_top = 84.0
