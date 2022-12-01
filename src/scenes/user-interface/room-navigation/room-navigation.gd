@@ -6,7 +6,7 @@ var active_room = null setget set_active_room;
 
 var rooms_menu_body_node_path = "CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody"
 onready var rooms_menu_body_node = get_node(rooms_menu_body_node_path);
-onready var active_room_label_node = get_node("CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer/ActiveRoomLabel");
+onready var active_room_label_node = get_node("CanvasLayer/RoomsMenu/MarginContainer/ColorRect/MarginContainer/RoomSelectMenuBody/HBoxContainer5/ActiveRoomLabel");
 
 signal switch_room(room);
 
