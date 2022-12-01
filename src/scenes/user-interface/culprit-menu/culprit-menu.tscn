@@ -98,32 +98,45 @@ margin_right = 300.0
 margin_bottom = 492.0
 stretch_mode = 6
 
-[node name="CulpritText" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit"]
 margin_left = 304.0
+margin_right = 944.0
+margin_bottom = 492.0
+rect_min_size = Vector2( 640, 0 )
+
+[node name="CulpritText" type="VBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2"]
 margin_top = 175.0
-margin_right = 304.0
+margin_right = 640.0
 margin_bottom = 317.0
+grow_horizontal = 0
+grow_vertical = 0
 size_flags_vertical = 4
 
-[node name="CulpritLabel" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+[node name="CulpritLabel" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2/CulpritText"]
+margin_right = 640.0
 margin_bottom = 49.0
 custom_fonts/font = SubResource( 1 )
 
-[node name="CulpritDescription" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+[node name="CulpritDescription" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2/CulpritText"]
 margin_top = 53.0
+margin_right = 640.0
 margin_bottom = 88.0
 custom_fonts/font = SubResource( 2 )
+autowrap = true
 
-[node name="CulpritHint1" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+[node name="CulpritHint1" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2/CulpritText"]
 margin_top = 92.0
+margin_right = 640.0
 margin_bottom = 106.0
 
-[node name="CulpritHint2" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+[node name="CulpritHint2" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2/CulpritText"]
 margin_top = 110.0
+margin_right = 640.0
 margin_bottom = 124.0
 
-[node name="CulpritHint3" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/CulpritText"]
+[node name="CulpritHint3" type="Label" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody/SelectedCulprit/MarginContainer2/CulpritText"]
 margin_top = 128.0
+margin_right = 640.0
 margin_bottom = 142.0
 
 [node name="CulpritList" type="HBoxContainer" parent="CanvasLayer/CulpritMenu/MarginContainer/ColorRect/MarginContainer/CulpritMenuBody"]
