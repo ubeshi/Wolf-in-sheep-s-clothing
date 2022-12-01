@@ -50,7 +50,7 @@
 			"character": "character-1668053403.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Well.... crack on then!\n*struggles to cut the cake with its supple paws* \nUGH...this CAKE wont cut"
+			"text": "* Struggling to cut the cake with its british paws * \nI'm absolutely knackered.\nThis stewpid cake won't cut with this stewpid knife."
 		},
 		{
 			"character": "character-1667882996.json",
@@ -62,7 +62,11 @@
 			"character": "character-1668053403.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I'll be allroight\nI wos workin on this bloke with a much sharpa knife\nHm... mightve been in me backpack but I seem to have misplaced it!"
+			"text": "I'll be tickety-boo without your help.\nI wos workin' on this bloke with a much sharpa knife before...\nMight've been in me backpack but I seem to have misplaced it."
+		},
+		{
+			"emit_signal": "bunny_quest",
+			"event_id": "dialogic_040"
 		},
 		{
 			"definition": "1668654821-648",

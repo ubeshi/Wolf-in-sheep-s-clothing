@@ -70,61 +70,61 @@
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Please dont kill me!"
+			"text": "Please don't kill me!"
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "PULL YOURSELF TOGETHER FROG"
-		},
-		{
-			"character": "character-1667876666.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Don't you want to find the real killer?\nCould you please just tell me where you were during the murder? "
-		},
-		{
-			"character": "character-1668057277.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Promise not to kill us?!"
-		},
-		{
-			"character": "character-1668057272.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "We were here in the cellar trying out these fancyy wines."
-		},
-		{
-			"character": "character-1668057277.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Yeah! We were having a great time\nThe cabernet sauvignon?!?\nChefs kiss"
+			"text": "PULL YOURSELF TOGETHER FROG."
 		},
 		{
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Were you two in the cellar alone the whole time?"
-		},
-		{
-			"character": "character-1668057272.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Hmmm I think I heard someone come down but we were right in the middle of naming all the tasting notes! "
+			"text": "Don't you want to find the real killer?\nCould you both please tell me where you were during the murder? "
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yeah, I heard em!\nThey mustve gone back upstairs pretty quick because by the time we turned around they were gone"
+			"text": "Only if you promise not to kill us!"
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hmm now that I think about it the rope that was holding the hay bales together is gone\nMaybe thats what they came to the cellar for?"
+			"text": "We were here in the cellar trying out these fancy wines."
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We were having a great time too.\nScreaming Eagle Cabernet Sauvignon 1992!?\nChef's kiss."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You two were in the cellar alone the entire time?"
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I did hear someone come down.\nI thought it was Horse coming to take one of my nine lives for drinking his best bottle."
+		},
+		{
+			"character": "character-1668057277.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, I heard them too.\nThey must've gone back upstairs pretty quick because by the time we built up the courage to go check who it was they were gone."
+		},
+		{
+			"character": "character-1668057272.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, weren't those hay bales held together with rope when we first got here?\nLooks like whoever came down to the cellar took the rope with them."
 		},
 		{
 			"animation": "[Default]",

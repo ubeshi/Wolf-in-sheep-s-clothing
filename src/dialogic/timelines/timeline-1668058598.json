@@ -76,43 +76,49 @@
 			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I found the homegrown wine!"
+			"text": "I found the homegrown wine."
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "AH! YES YES YES! I've been dying to try this."
+			"text": "YAY! I've been dying to try this."
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "OH LORD\nTHE FLAVOURS ARE MELTING ON MY TOUNGE!"
+			"text": "Too soon, Cat.\nPass me a glass...\nOH LORD!\nTHE FLAVOURS ARE MELTING ON MY TOUNGE!"
 		},
 		{
-			"character": "character-1667876666.json",
+			"character": "character-1667882996.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Okay, now whats the secret you two mentioned?"
+			"text": "Okay, now what about that secret you two mentioned?"
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Well...Frog and I were thinking about how Horse went into the kitchen"
+			"text": "Well, Frog and I were thinking about how Horse was last seen alive in the kitchen."
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The basement is connected to the kitchen\nSo whoever was in the kitchen must know something about what happened to Horse"
+			"text": "Whoever was in the kitchen must know something about what happened to Horse before he was murked."
+		},
+		{
+			"character": "character-1667882996.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That is actually really helpful. \nThanks."
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Be careful...\nCuriosity killed the cat."
+			"text": "Be careful.\nCuriosity killed the cat..."
 		},
 		{
 			"animation": "[Default]",

@@ -70,19 +70,19 @@
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "WELL, WELL, WELL. If it isnt the murdererer."
+			"text": "WELL, WELL, WELL, if it isn't the murderer-er."
 		},
 		{
 			"character": "character-1668057277.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah go away!!!"
+			"text": "Ah, stay back!"
 		},
 		{
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, dont be such a scaredy-cat, Frog."
+			"text": "Oh, don't be such a scaredy cat, Frog."
 		},
 		{
 			"character": "character-1667882996.json",
@@ -94,7 +94,7 @@
 			"character": "character-1668057272.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hmm. Well, you'll have to prove it!"
+			"text": "Well, you'll have to prove it or you're doing time."
 		},
 		{
 			"animation": "[Default]",
